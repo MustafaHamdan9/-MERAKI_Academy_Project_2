@@ -2,36 +2,33 @@ const body = $("body");
 const main = $(".main");
 const fwd = $(".fwd");
 ////////////////////////////////////
-
 const europe = $(".eur");
+const asia = $(".asia");
+const africa = $(".africa");
+const america = $(".america");
+fwdx = [asia, europe, africa, america];
 
-const italy = $(".italy");
-//const pitaly = $("<p></p>");
-//italy.append(pitaly);
-
-const deleu = function () {
-    for (i = 0; i <= fwdx.length - 1; i++) {
-      if (fwdx[i] !== europe) {
-        fwdx[i].css("display", "none");
-      }
+///////////////////////////////
+const deleu = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    if (fwdx[i] !== europe) {
+      fwdx[i].css("display", "none");
     }
-  };
-
+  }
+};
+const italy = $(".italy");
 const italybut = $("<button>italy</button>");
 italy.append(italybut);
-
 italybut.on("click", () => {
-
+  deleu();
 });
-
-
 
 const french = $(".french");
 const frenchbut = $("<button>french</button>");
 french.append(frenchbut);
 
 frenchbut.on("click", () => {
-    deleu();
+  deleu();
 });
 
 const spain = $(".spain");
@@ -39,7 +36,7 @@ const spainbut = $("<button>spain</button>");
 spain.append(spainbut);
 
 spainbut.on("click", () => {
-    deleu();
+  deleu();
 });
 
 const british = $(".british");
@@ -47,157 +44,127 @@ const britishbut = $("<button>british</button>");
 british.append(britishbut);
 
 britishbut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+  deleu();
 });
 
 /////////////////////
+const delas = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    if (fwdx[i] !== asia) {
+      fwdx[i].css("display", "none");
+    }
+  }
+};
 
-const asia = $(".asia");
-
-/*const china = $(".china");
+const china = $(".china");
 const chinabut = $("<button>china</button>");
 china.append(chinabut);
-
-
-
-  //asia.css("display", "none");
-  //africa.css("display", "none");
-  //america.css("display", "none");
+chinabut.on("click", () => {
+  delas();
 });
 
 const Midest = $(".Midest");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
-
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+const Midestbut = $("<button>Midest</button>");
+Midest.append(Midestbut);
+Midestbut.on("click", () => {
+  delas();
 });
 
 const Korea = $(".Korea");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const Koreabut = $("<button>Korea</button>");
+Korea.append(Koreabut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+Koreabut.on("click", () => {
+  delas();
 });
 
 const japan = $(".japan");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const japanbut = $("<button>japan</button>");
+japan.append(japanbut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+japanbut.on("click", () => {
+  delas();
 });
 
 ////////////////////////////////////*/
-
-const africa = $(".africa");
-/*const italybut = $("<button>italy</button>");
-italy.append(italybut);
-
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
-});
+const delaf = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    if (fwdx[i] !== africa) {
+      fwdx[i].css("display", "none");
+    }
+  }
+};
 
 const moroco = $(".moroco");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const morocobut = $("<button>moroco</button>");
+moroco.append(morocobut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+morocobut.on("click", () => {
+  delaf();
 });
 
 const algeria = $(".algeria");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const algeriabut = $("<button>algeria</button>");
+algeria.append(algeriabut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+algeriabut.on("click", () => {
+  delaf();
 });
 
 const sudan = $(".sudan");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const sudanbut = $("<button>sudan</button>");
+sudan.append(sudanbut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+sudanbut.on("click", () => {
+  delaf();
 });
 
 const egypt = $(".egypt");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const egyptbut = $("<button>egypt</button>");
+egypt.append(egyptbut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+egyptbut.on("click", () => {
+  delaf();
 });
 
 ////////////////////////////////////*/
 
-const america = $(".america");
-/*const italybut = $("<button>italy</button>");
-italy.append(italybut);
-
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
-});
+const delam = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    if (fwdx[i] !== america) {
+      fwdx[i].css("display", "none");
+    }
+  }
+};
 
 const usa = $(".usa");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const usabut = $("<button>usa</button>");
+usa.append(usabut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+usabut.on("click", () => {
+  delam();
 });
 
 const canda = $(".canda");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const candabut = $("<button>canda</button>");
+canda.append(candabut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+candabut.on("click", () => {
+  delam();
 });
 
 const brazil = $(".brazil");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const brazilbut = $("<button>brazil</button>");
+brazil.append(brazilbut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
+brazilbut.on("click", () => {
+  delam();
 });
 
 const argentina = $(".argin");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
+const argentinabut = $("<button>argentina</button>");
+argentina.append(argentinabut);
 
-italybut.on("click", () => {
-  asia.css("display", "none");
-  africa.css("display", "none");
-  america.css("display", "none");
-});*/
-fwdx = [asia, europe, africa, america];
+argentinabut.on("click", () => {
+  delam();
+});
