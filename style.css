@@ -13,6 +13,7 @@ body {
 #navBar {
   display: flex;
   justify-content: space-between;
+
   background-image: url(https://previews.123rf.com/images/vicushka/vicushka1705/vicushka170500098/77753416-healthy-food-background-for-recipes-menu-or-list-with-various-fresh-organic-vegetables-and-condiment.jpg);
   margin-top: 50px;
   font-size: 50px;
@@ -71,7 +72,7 @@ body {
   font-size: 50px;
 }
 
-.amerca {
+.america {
   border-style: solid;
   border-color: black;
   padding: 10px;
