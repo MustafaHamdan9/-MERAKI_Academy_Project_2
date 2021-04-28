@@ -12,14 +12,28 @@ fwdx = [asia, europe, africa, america];
 const deleu = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== europe) {
-      fwdx[i].css("display", "none");
+      fwdx[i].hide();
     }
   }
 };
+const backeu = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    fwdx[i].show();
+  }
+};
+
 const italy = $(".italy");
-const italybut = $("<button>italy</button>");
-italy.append(italybut);
-italybut.on("click", () => {
+const ib2 = $("<button>italy2</button>");
+italy.append(ib2);
+
+const ib1 = $("<button>italy1</button>");
+italy.append(ib1);
+ib2.on("click", () => {
+  console.log("hellog");
+  backeu();
+});
+
+ib1.on("click", () => {
   deleu();
 });
 
@@ -86,7 +100,7 @@ japanbut.on("click", () => {
   delas();
 });
 
-////////////////////////////////////*/
+////////////////////////////////////////////////////
 const delaf = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== africa) {
@@ -127,7 +141,7 @@ egyptbut.on("click", () => {
   delaf();
 });
 
-////////////////////////////////////*/
+//////////////////////////////////////////////////////////////
 
 const delam = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
