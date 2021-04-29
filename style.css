@@ -35,13 +35,16 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   /*background-image: url(https://i.pinimg.com/originals/5c/5e/6b/5c5e6b00aae3430a6e0803a38c8dda1c.png);*/
-  background-color: white;
+  background-color:  yellow;;
   font-size: 100px;
-  color: green;
+  
 }
 
-#er {
-  font-size: 50px;
+#eup {
+  
+  color: red;
+  font-size: 100px;
+
 }
 
  
@@ -53,7 +56,7 @@ body {
   margin-left: 20px;
   background-color: lightgrey;
   /*/background-image: url(https://i.imgur.com/Ha3C5sR.jpg);*/
-  background-color: white;
+  background-color: lightblue;
   font-size: 100px;
 }
 
@@ -69,7 +72,7 @@ body {
   margin-left: 20px;
   background-color: lightgrey;
   font-size: 100px;
-  background-color: white;
+  background-color: green;
   /*background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2018/10/taste-atlas-food-map-fb5__700-png.jpg);*/
 }
 
@@ -83,7 +86,7 @@ body {
   padding: 10px;
   margin-right: 20px;
   margin-left: 20px;
-  background-color: white;
+  background-color: red;
   /* background-image: url(https://i.pinimg.com/originals/d9/ad/9d/d9ad9df0faf83426c98085ef819aaf64.png);*/
   font-size: 100px;
 }

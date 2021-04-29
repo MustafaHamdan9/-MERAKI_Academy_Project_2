@@ -220,8 +220,6 @@ sudb.on("click", () => {
   }
 });
 
-
- 
 const egypt = $(".egypt");
 const egb = $("<button>Egypt</button>");
 egypt.append(egb);
@@ -252,7 +250,6 @@ const backam = () => {
   }
 };
 
-
 const usa = $(".usa");
 const usab = $("<button>USA</button>");
 usa.append(usab);
@@ -269,27 +266,49 @@ usab.on("click", () => {
   }
 });
 
-/*
-const canda = $(".canda");
-const candabut = $("<button>canda</button>");
-canda.append(candabut);
+const canada = $(".canada");
+const canb = $("<button>Canada</button>");
+canada.append(canb);
+canb.css("font-size", "50px");
 
-candabut.on("click", () => {
-  delam();
+let showca = true;
+canb.on("click", () => {
+  if (showca === true) {
+    delam();
+    showca = !showca;
+  } else {
+    backam();
+    showca = !showca;
+  }
 });
 
 const brazil = $(".brazil");
-const brazilbut = $("<button>brazil</button>");
-brazil.append(brazilbut);
+const brab = $("<button>Brazil</button>");
+brazil.append(brab);
+brab.css("font-size", "50px");
 
-brazilbut.on("click", () => {
-  delam();
+let showbr = true;
+brab.on("click", () => {
+  if (showbr === true) {
+    delam();
+    showbr = !showbr;
+  } else {
+    backam();
+    showbr = !showbr;
+  }
 });
+const argin = $(".argin");
+const argb = $("<button>Argentina</button>");
+argin.append(argb);
+argb.css("font-size", "50px");
 
-const argentina = $(".argin");
-const argentinabut = $("<button>argentina</button>");
-argentina.append(argentinabut);
-
-argentinabut.on("click", () => {
-  delam();
-});*/
+let showarg = true;
+argb.on("click", () => {
+  if (showarg === true) {
+    delam();
+    showarg = !showarg;
+  } else {
+    backam();
+    showarg = !showarg;
+  }
+});
