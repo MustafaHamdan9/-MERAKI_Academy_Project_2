@@ -23,19 +23,26 @@ const backeu = () => {
 };
 
 const italy = $(".italy");
+
 const ib2 = $("<button>italy2</button>");
 italy.append(ib2);
 
-const ib1 = $("<button>italy1</button>");
-italy.append(ib1);
+/*const ib1 = $("<button>italy1</button>");
+italy.append(ib1);*/
+let x = true;
 ib2.on("click", () => {
-  console.log("hellog");
-  backeu();
+  if (x === true) {
+    deleu();
+    x = !x;
+  } else {
+    backeu();
+    x = !x;
+  }
 });
 
-ib1.on("click", () => {
+/*ib1.on("click", () => {
   deleu();
-});
+});*/
 
 const french = $(".french");
 const frenchbut = $("<button>french</button>");
