@@ -183,44 +183,58 @@ mcb.on("click", () => {
     delaf();
     showmo = !showmo;
   } else {
-    backas();
+    backaf();
     showmo = !showmo;
   }
 });
 
-const sudan = $(".sudan");
-const sudanbut = $("<button>Sudan</button>");
-sudan.append(mcb);
-mcb.css("font-size", "50px");
-let showmo = true;
+const algeria = $(".algeria");
+const algb = $("<button>Algeria</button>");
+algeria.append(algb);
+algb.css("font-size", "50px");
 
-mcb.on("click", () => {
-  if (showmo === true) {
+let showalg = true;
+algb.on("click", () => {
+  if (showalg === true) {
     delaf();
-    showmo = !showmo;
+    showalg = !showalg;
   } else {
-    backas();
-    showmo = !showmo;
+    backaf();
+    showalg = !showalg;
+  }
+});
+
+const sudan = $(".sudan");
+const sudb = $("<button>Sudan</button>");
+sudan.append(sudb);
+sudb.css("font-size", "50px");
+
+let showsd = true;
+sudb.on("click", () => {
+  if (showsd === true) {
+    delaf();
+    showsd = !showsd;
+  } else {
+    backaf();
+    showsd = !showsd;
   }
 });
 
 
-
-/*
-const sudan = $(".sudan");
-const sudanbut = $("<button>sudan</button>");
-sudan.append(sudanbut);
-
-sudanbut.on("click", () => {
-  delaf();
-});
-
+ 
 const egypt = $(".egypt");
-const egyptbut = $("<button>egypt</button>");
-egypt.append(egyptbut);
-
-egyptbut.on("click", () => {
-  delaf();
+const egb = $("<button>Egypt</button>");
+egypt.append(egb);
+egb.css("font-size", "50px");
+let showeg = true;
+egb.on("click", () => {
+  if (showeg === true) {
+    delaf();
+    showeg = !showeg;
+  } else {
+    backaf();
+    showeg = !showeg;
+  }
 });
 
 //////////////////////////////////////////////////////////////
@@ -232,15 +246,30 @@ const delam = () => {
     }
   }
 };
+const backam = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    fwdx[i].show();
+  }
+};
+
 
 const usa = $(".usa");
-const usabut = $("<button>usa</button>");
-usa.append(usabut);
+const usab = $("<button>USA</button>");
+usa.append(usab);
+usab.css("font-size", "50px");
 
-usabut.on("click", () => {
-  delam();
+let showus = true;
+usab.on("click", () => {
+  if (showus === true) {
+    delam();
+    showus = !showus;
+  } else {
+    backam();
+    showus = !showus;
+  }
 });
 
+/*
 const canda = $(".canda");
 const candabut = $("<button>canda</button>");
 canda.append(candabut);
