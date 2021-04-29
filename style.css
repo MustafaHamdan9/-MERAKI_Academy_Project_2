@@ -43,6 +43,8 @@ body {
 #er {
   font-size: 50px;
 }
+
+ 
 .asia {
   border-style: solid;
   border-color: black;
@@ -82,7 +84,7 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
- /* background-image: url(https://i.pinimg.com/originals/d9/ad/9d/d9ad9df0faf83426c98085ef819aaf64.png);*/
+  /* background-image: url(https://i.pinimg.com/originals/d9/ad/9d/d9ad9df0faf83426c98085ef819aaf64.png);*/
   font-size: 100px;
 }
 

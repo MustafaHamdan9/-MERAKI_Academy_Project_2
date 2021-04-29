@@ -24,87 +24,138 @@ const backeu = () => {
 
 const italy = $(".italy");
 
-const ib2 = $("<button>italy2</button>");
+const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
-
-/*const ib1 = $("<button>italy1</button>");
-italy.append(ib1);*/
-let x = true;
+ib2.css("font-size", "50px");
+let showIt = true;
 ib2.on("click", () => {
-  if (x === true) {
+  if (showIt === true) {
     deleu();
-    x = !x;
+    showIt = !showIt;
   } else {
     backeu();
-    x = !x;
+    showIt = !showIt;
   }
 });
 
-/*ib1.on("click", () => {
-  deleu();
-});*/
-
 const french = $(".french");
-const frenchbut = $("<button>french</button>");
-french.append(frenchbut);
+const fb2 = $("<button>French</button>");
+french.append(fb2);
+fb2.css("font-size", "50px");
 
-frenchbut.on("click", () => {
-  deleu();
+let showFr = true;
+fb2.on("click", () => {
+  if (showFr === true) {
+    deleu();
+    showFr = !showFr;
+  } else {
+    backeu();
+    showFr = !showFr;
+  }
 });
 
 const spain = $(".spain");
-const spainbut = $("<button>spain</button>");
-spain.append(spainbut);
-
-spainbut.on("click", () => {
-  deleu();
+const bs2 = $("<button>Spain</button>");
+spain.append(bs2);
+bs2.css("font-size", "50px");
+let showSp = true;
+bs2.on("click", () => {
+  if (showSp === true) {
+    deleu();
+    showSp = !showSp;
+  } else {
+    backeu();
+    showSp = !showSp;
+  }
 });
 
 const british = $(".british");
-const britishbut = $("<button>british</button>");
-british.append(britishbut);
-
-britishbut.on("click", () => {
-  deleu();
+const bb2 = $("<button>British</button>");
+british.append(bb2);
+bb2.css("font-size", "50px");
+let showBr = true;
+bb2.on("click", () => {
+  if (showBr === true) {
+    deleu();
+    showBr = !showBr;
+  } else {
+    backeu();
+    showBr = !showBr;
+  }
 });
 
-/////////////////////
+//////////////////////////////////////////////
 const delas = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== asia) {
-      fwdx[i].css("display", "none");
+      fwdx[i].hide();
     }
+  }
+};
+const backas = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    fwdx[i].show();
   }
 };
 
 const china = $(".china");
-const chinabut = $("<button>china</button>");
-china.append(chinabut);
-chinabut.on("click", () => {
-  delas();
+const chb2 = $("<button>China</button>");
+china.append(chb2);
+chb2.css("font-size", "50px");
+let showch = true;
+chb2.on("click", () => {
+  if (showch === true) {
+    delas();
+    showch = !showch;
+  } else {
+    backas();
+    showch = !showch;
+  }
 });
 
 const Midest = $(".Midest");
-const Midestbut = $("<button>Midest</button>");
-Midest.append(Midestbut);
-Midestbut.on("click", () => {
-  delas();
+const mdb2 = $("<button>Midest</button>");
+Midest.append(mdb2);
+mdb2.css("font-size", "50px");
+let showmd = true;
+mdb2.on("click", () => {
+  if (showmd === true) {
+    delas();
+    showmd = !showmd;
+  } else {
+    backas();
+    showmd = !showmd;
+  }
 });
 
 const Korea = $(".Korea");
-const Koreabut = $("<button>Korea</button>");
-Korea.append(Koreabut);
-
-Koreabut.on("click", () => {
-  delas();
+const kb2 = $("<button>Korea</button>");
+Korea.append(kb2);
+kb2.css("font-size", "50px");
+let showko = true;
+kb2.on("click", () => {
+  if (showko === true) {
+    delas();
+    showko = !showko;
+  } else {
+    backas();
+    showko = !showko;
+  }
 });
 
 const japan = $(".japan");
-const japanbut = $("<button>japan</button>");
-japan.append(japanbut);
-
-japanbut.on("click", () => {
-  delas();
+const jb2 = $("<button>Japan</button>");
+japan.append(jb2);
+jb2.css("font-size", "50px");
+let showjp = true;
+jb2.on("click", () => {
+  if (showjp === true) {
+    delas();
+    showjp = !showjp;
+  } else {
+    backas();
+    showjp = !showjp;
+  }
 });
 
 ////////////////////////////////////////////////////
@@ -115,23 +166,47 @@ const delaf = () => {
     }
   }
 };
+const backaf = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    fwdx[i].show();
+  }
+};
 
 const moroco = $(".moroco");
-const morocobut = $("<button>moroco</button>");
-moroco.append(morocobut);
+const mcb = $("<button>Moroco</button>");
+moroco.append(mcb);
+mcb.css("font-size", "50px");
+let showmo = true;
 
-morocobut.on("click", () => {
-  delaf();
+mcb.on("click", () => {
+  if (showmo === true) {
+    delaf();
+    showmo = !showmo;
+  } else {
+    backas();
+    showmo = !showmo;
+  }
 });
 
-const algeria = $(".algeria");
-const algeriabut = $("<button>algeria</button>");
-algeria.append(algeriabut);
+const sudan = $(".sudan");
+const sudanbut = $("<button>Sudan</button>");
+sudan.append(mcb);
+mcb.css("font-size", "50px");
+let showmo = true;
 
-algeriabut.on("click", () => {
-  delaf();
+mcb.on("click", () => {
+  if (showmo === true) {
+    delaf();
+    showmo = !showmo;
+  } else {
+    backas();
+    showmo = !showmo;
+  }
 });
 
+
+
+/*
 const sudan = $(".sudan");
 const sudanbut = $("<button>sudan</button>");
 sudan.append(sudanbut);
@@ -188,4 +263,4 @@ argentina.append(argentinabut);
 
 argentinabut.on("click", () => {
   delam();
-});
+});*/
