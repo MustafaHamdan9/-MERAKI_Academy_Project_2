@@ -1,16 +1,16 @@
 const body = $("body");
 const main = $(".main");
 const fwd = $(".fwd");
-////////////////////////////////////
+//////////////////////////
 const europe = $(".eur");
 const asia = $(".asia");
-const africa = $(".africa");
+
 const america = $(".america");
-fwdx = [asia, europe, africa, america];
+fwdx = [asia, europe, america];
 europe.hide();
 asia.hide();
 america.hide();
-africa.hide();
+
 const home = $("#hme");
 const hme = $("<button>Home</button>");
 home.append(hme);
@@ -20,9 +20,8 @@ hme.on("click", () => {
   europe.hide();
   asia.hide();
   america.hide();
-  africa.hide();
 });
-///////////////////////////////
+///////////////////////////////////////////
 const french = $(".french");
 const spain = $(".spain");
 const british = $(".british");
@@ -35,11 +34,6 @@ const deleu = () => {
     }
   }
 };
-const backeu = () => {
-  for (i = 0; i <= fwdx.length - 1; i++) {
-    fwdx[i].show();
-  }
-};
 
 const eur = $("#eup");
 const eu2 = $("<button>Europe</button>");
@@ -50,8 +44,7 @@ eu2.on("click", () => {
   deleu();
   europe.show();
 });
-
-//const italy = $(".italy");
+/////////////
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
 ib2.css("font-size", "50px");
@@ -61,12 +54,9 @@ const pizza = $("#piz");
 pasta.hide();
 pizza.hide();
 
-//itmg2.hide();
-
 let showIt = true;
 ib2.on("click", () => {
   if (showIt === true) {
-    deleu();
     pasta.show();
     pizza.show();
     french.hide();
@@ -85,17 +75,21 @@ ib2.on("click", () => {
 });
 
 //const french = $(".french");
-const fb2 = $("<button>French</button>");
+const fb2 = $("<button>France</button>");
 french.append(fb2);
 fb2.css("font-size", "50px");
 
 let showFr = true;
 fb2.on("click", () => {
   if (showFr === true) {
-    deleu();
+    italy.hide();
+    spain.hide();
+    british.hide();
     showFr = !showFr;
   } else {
-    backeu();
+    italy.show();
+    spain.show();
+    british.show();
     showFr = !showFr;
   }
 });
@@ -107,10 +101,14 @@ bs2.css("font-size", "50px");
 let showSp = true;
 bs2.on("click", () => {
   if (showSp === true) {
-    deleu();
+    italy.hide();
+    french.hide();
+    british.hide();
     showSp = !showSp;
   } else {
-    backeu();
+    italy.show();
+    french.show();
+    british.show();
     showSp = !showSp;
   }
 });
@@ -122,25 +120,24 @@ bb2.css("font-size", "50px");
 let showBr = true;
 bb2.on("click", () => {
   if (showBr === true) {
-    deleu();
+    italy.hide();
+    french.hide();
+    spain.hide();
     showBr = !showBr;
   } else {
-    backeu();
+    italy.show();
+    french.show();
+    spain.show();
     showBr = !showBr;
   }
 });
 
-//////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 const delas = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== asia) {
       fwdx[i].hide();
     }
-  }
-};
-const backas = () => {
-  for (i = 0; i <= fwdx.length - 1; i++) {
-    fwdx[i].show();
   }
 };
 
@@ -153,7 +150,7 @@ as2.on("click", () => {
   delas();
   asia.show();
 });
-
+/////////
 const china = $(".china");
 const chb2 = $("<button>China</button>");
 china.append(chb2);
@@ -161,10 +158,14 @@ chb2.css("font-size", "50px");
 let showch = true;
 chb2.on("click", () => {
   if (showch === true) {
-    delas();
+    Midest.hide();
+    Korea.hide();
+    japan.hide();
     showch = !showch;
   } else {
-    backas();
+    Midest.show();
+    Korea.show();
+    japan.show();
     showch = !showch;
   }
 });
@@ -176,10 +177,14 @@ mdb2.css("font-size", "50px");
 let showmd = true;
 mdb2.on("click", () => {
   if (showmd === true) {
-    delas();
+    china.hide();
+    Korea.hide();
+    japan.hide();
     showmd = !showmd;
   } else {
-    backas();
+    china.show();
+    Korea.show();
+    japan.show();
     showmd = !showmd;
   }
 });
@@ -191,10 +196,14 @@ kb2.css("font-size", "50px");
 let showko = true;
 kb2.on("click", () => {
   if (showko === true) {
-    delas();
+    china.hide();
+    Midest.hide();
+    japan.hide();
     showko = !showko;
   } else {
-    backas();
+    china.show();
+    Midest.show();
+    japan.show();
     showko = !showko;
   }
 });
@@ -206,90 +215,17 @@ jb2.css("font-size", "50px");
 let showjp = true;
 jb2.on("click", () => {
   if (showjp === true) {
-    delas();
+    china.hide();
+    Midest.hide();
+    Korea.hide();
     showjp = !showjp;
   } else {
-    backas();
+    china.show();
+    Midest.show();
+    Korea.show();
     showjp = !showjp;
   }
 });
-
-////////////////////////////////////////////////////
-/*const delaf = () => {
-  for (i = 0; i <= fwdx.length - 1; i++) {
-    if (fwdx[i] !== africa) {
-      fwdx[i].css("display", "none");
-    }
-  }
-};
-const backaf = () => {
-  for (i = 0; i <= fwdx.length - 1; i++) {
-    fwdx[i].show();
-  }
-};
-
-const moroco = $(".moroco");
-const mcb = $("<button>Moroco</button>");
-moroco.append(mcb);
-mcb.css("font-size", "50px");
-let showmo = true;
-
-mcb.on("click", () => {
-  if (showmo === true) {
-    delaf();
-    showmo = !showmo;
-  } else {
-    backaf();
-    showmo = !showmo;
-  }
-});
-
-const algeria = $(".algeria");
-const algb = $("<button>Algeria</button>");
-algeria.append(algb);
-algb.css("font-size", "50px");
-
-let showalg = true;
-algb.on("click", () => {
-  if (showalg === true) {
-    delaf();
-    showalg = !showalg;
-  } else {
-    backaf();
-    showalg = !showalg;
-  }
-});
-
-const sudan = $(".sudan");
-const sudb = $("<button>Sudan</button>");
-sudan.append(sudb);
-sudb.css("font-size", "50px");
-
-let showsd = true;
-sudb.on("click", () => {
-  if (showsd === true) {
-    delaf();
-    showsd = !showsd;
-  } else {
-    backaf();
-    showsd = !showsd;
-  }
-});
-
-const egypt = $(".egypt");
-const egb = $("<button>Egypt</button>");
-egypt.append(egb);
-egb.css("font-size", "50px");
-let showeg = true;
-egb.on("click", () => {
-  if (showeg === true) {
-    delaf();
-    showeg = !showeg;
-  } else {
-    backaf();
-    showeg = !showeg;
-  }
-});*/
 
 //////////////////////////////////////////////////////////////
 
@@ -298,11 +234,6 @@ const delam = () => {
     if (fwdx[i] !== america) {
       fwdx[i].css("display", "none");
     }
-  }
-};
-const backam = () => {
-  for (i = 0; i <= fwdx.length - 1; i++) {
-    fwdx[i].show();
   }
 };
 
@@ -324,10 +255,14 @@ usab.css("font-size", "50px");
 let showus = true;
 usab.on("click", () => {
   if (showus === true) {
-    delam();
+    canada.hide();
+    brazil.hide();
+    argin.hide();
     showus = !showus;
   } else {
-    backam();
+    canada.show();
+    brazil.show();
+    argin.show();
     showus = !showus;
   }
 });
@@ -340,10 +275,14 @@ canb.css("font-size", "50px");
 let showca = true;
 canb.on("click", () => {
   if (showca === true) {
-    delam();
+    usa.hide();
+    brazil.hide();
+    argin.hide();
     showca = !showca;
   } else {
-    backam();
+    usa.show();
+    brazil.show();
+    argin.show();
     showca = !showca;
   }
 });
@@ -356,10 +295,14 @@ brab.css("font-size", "50px");
 let showbr = true;
 brab.on("click", () => {
   if (showbr === true) {
-    delam();
+    usa.show();
+    canada.show();
+    argin.show();
     showbr = !showbr;
   } else {
-    backam();
+    usa.show();
+    canada.show();
+    argin.show();
     showbr = !showbr;
   }
 });
@@ -371,10 +314,14 @@ argb.css("font-size", "50px");
 let showarg = true;
 argb.on("click", () => {
   if (showarg === true) {
-    delam();
+    usa.show();
+    canada.show();
+    brazil.show();
     showarg = !showarg;
   } else {
-    backam();
+    usa.show();
+    brazil.show();
+    canada.show();
     showarg = !showarg;
   }
 });
