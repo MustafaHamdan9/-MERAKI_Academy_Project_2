@@ -5,25 +5,28 @@ body {
 .main {
   display: grid;
   background-color: brown;
-  background-image: url(https://i.pinimg.com/736x/e6/7d/af/e67daf68a6e8f6d4a9283cb7d64b098c.jpg);
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #navBar {
-  position: relative;
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 20px;
+}
 
-  background-image: url(https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); 
-background-color: yellowgreen;
-  margin-top: 50px;
-  font-size: 100px;
+.leftNav {
+  display: flex;
+}
 
-  /* text-align: center;*/
-  color: yellow;
-  
+.left {
+  padding-left: 20px;
+}
+
+.rightNav {
+  padding-right: 20px;
 }
 
 .fwd {
@@ -31,7 +34,7 @@ background-color: yellowgreen;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   margin-top: 100px;
-  border-radius:  50%;
+  border-radius: 50%;
 }
 
 .eur {
@@ -40,16 +43,31 @@ background-color: yellowgreen;
   padding: 10px;
   margin-right: 20px;
   margin-left: 20px;
-  /*background-image: url(https://i.pinimg.com/originals/5c/5e/6b/5c5e6b00aae3430a6e0803a38c8dda1c.png);*/
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
   background-color: yellow;
   font-size: 70px;
-  border-radius:  50%}
+  border-radius: 50%;
+}
 
 #eup {
   color: red;
-  font-size: 70px;
+  font-size: 100px;
+  border-radius: 50%;
 }
 
+.italy {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  
+}
+#pas{
+  display: flex;
+  flex-direction: row;
+height: 300px;
+width: 300;
+/*align-items: center;*/
+}
 .asia {
   border-style: solid;
   border-color: black;
@@ -57,16 +75,15 @@ background-color: yellowgreen;
   margin-right: 20px;
   margin-left: 20px;
   background-color: lightgrey;
-  /*/background-image: url(https://i.imgur.com/Ha3C5sR.jpg);*/
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
   background-color: lightblue;
   font-size: 70px;
-  border-radius:  50%}
-
+  border-radius: 50%;
 }
 
 #asi {
   color: darkblue;
-  font-size: 70px;
+  font-size: 100px;
 }
 
 .africa {
@@ -78,14 +95,13 @@ background-color: yellowgreen;
   background-color: lightgrey;
   font-size: 70px;
   background-color: green;
-  border-radius:  50%}
-
-  /*background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2018/10/taste-atlas-food-map-fb5__700-png.jpg);*/
+  border-radius: 50%;
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
 }
 
 #afi {
   color: deepskyblue;
-  font-size: 70px;
+  font-size: 100px;
 }
 
 .america {
@@ -95,15 +111,14 @@ background-color: yellowgreen;
   margin-right: 20px;
   margin-left: 20px;
   background-color: red;
-  /* background-image: url(https://i.pinimg.com/originals/d9/ad/9d/d9ad9df0faf83426c98085ef819aaf64.png);*/
-  border-radius:  50%}
-
- 
- 
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
+  font-size: 70px;
+  border-radius: 50%;
+}
 
 #ami {
   color: white;
-  font-size: 70px;
+  font-size: 100px;
 }
 
 .feedback {
@@ -113,10 +128,9 @@ background-color: yellowgreen;
   background-color: white;
   margin-right: 100px;
   margin-left: 100px;
-  font-size: 50px;
+  font-size: 100px;
   text-align: center;
   margin-top: 100px;
-  border-radius:  50%}
-
-  background-image: url(https://image.shutterstock.com/image-vector/yummy-smile-isolated-icon-delicious-260nw-1392166112.jpg);
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
+  background-repeat: no-repeat;
 }

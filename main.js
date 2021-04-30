@@ -7,7 +7,22 @@ const asia = $(".asia");
 const africa = $(".africa");
 const america = $(".america");
 fwdx = [asia, europe, africa, america];
+europe.hide();
+  asia.hide();
+  america.hide();
+  africa.hide();
 
+const home = $("#hme");
+const hme = $("<button>Home</button>");
+home.append(hme);
+hme.css("font-size", "10px");
+
+hme.on("click", () => {
+  europe.hide();
+  asia.hide();
+  america.hide();
+  africa.hide();
+});
 ///////////////////////////////
 const deleu = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
@@ -22,19 +37,39 @@ const backeu = () => {
   }
 };
 
-const italy = $(".italy");
+const eur = $("#eup");
+const eu2 = $("<button>Europe</button>");
+eur.append(eu2);
+eu2.css("font-size", "10px");
 
+eu2.on("click", () => {
+  deleu();
+  europe.show();
+});
+
+const italy = $(".italy");
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
 ib2.css("font-size", "50px");
+
+const pasta = $("#pas");
+const pizza = $("#piz");
+pasta.hide();
+pizza.hide();
+//itmg2.hide();
+
 let showIt = true;
 ib2.on("click", () => {
   if (showIt === true) {
     deleu();
+    pasta.show();
+    pizza.show();
     showIt = !showIt;
   } else {
     backeu();
     showIt = !showIt;
+    pasta.hide();
+    pizza.hide();
   }
 });
 
@@ -98,6 +133,16 @@ const backas = () => {
   }
 };
 
+const assia = $("#asi");
+const as2 = $("<button>Asia</button>");
+assia.append(as2);
+as2.css("font-size", "10px");
+
+as2.on("click", () => {
+  delas();
+  asia.show();
+});
+
 const china = $(".china");
 const chb2 = $("<button>China</button>");
 china.append(chb2);
@@ -159,7 +204,7 @@ jb2.on("click", () => {
 });
 
 ////////////////////////////////////////////////////
-const delaf = () => {
+/*const delaf = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== africa) {
       fwdx[i].css("display", "none");
@@ -233,7 +278,7 @@ egb.on("click", () => {
     backaf();
     showeg = !showeg;
   }
-});
+});*/
 
 //////////////////////////////////////////////////////////////
 
@@ -249,6 +294,16 @@ const backam = () => {
     fwdx[i].show();
   }
 };
+
+const amerca = $("#amc");
+const am2 = $("<button>America</button>");
+amerca.append(am2);
+am2.css("font-size", "10px");
+
+am2.on("click", () => {
+  delam();
+  america.show();
+});
 
 const usa = $(".usa");
 const usab = $("<button>USA</button>");
