@@ -15,7 +15,7 @@ europe.hide();
 const home = $("#hme");
 const hme = $("<button>Home</button>");
 home.append(hme);
-hme.css("font-size", "10px");
+hme.css("font-size", "20px");
 
 hme.on("click", () => {
   europe.hide();
@@ -61,12 +61,13 @@ pizza.hide();
 let showIt = true;
 ib2.on("click", () => {
   if (showIt === true) {
-    deleu();
+   
     pasta.show();
     pizza.show();
+    
     showIt = !showIt;
   } else {
-    backeu();
+    europe.show();
     showIt = !showIt;
     pasta.hide();
     pizza.hide();
