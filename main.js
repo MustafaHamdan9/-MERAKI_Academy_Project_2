@@ -8,14 +8,13 @@ const africa = $(".africa");
 const america = $(".america");
 fwdx = [asia, europe, africa, america];
 europe.hide();
-  asia.hide();
-  america.hide();
-  africa.hide();
-
+asia.hide();
+america.hide();
+africa.hide();
 const home = $("#hme");
 const hme = $("<button>Home</button>");
 home.append(hme);
-hme.css("font-size", "20px");
+hme.css("font-size", "10px");
 
 hme.on("click", () => {
   europe.hide();
@@ -24,6 +23,11 @@ hme.on("click", () => {
   africa.hide();
 });
 ///////////////////////////////
+const french = $(".french");
+const spain = $(".spain");
+const british = $(".british");
+const italy = $(".italy");
+
 const deleu = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== europe) {
@@ -47,7 +51,7 @@ eu2.on("click", () => {
   europe.show();
 });
 
-const italy = $(".italy");
+//const italy = $(".italy");
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
 ib2.css("font-size", "50px");
@@ -56,25 +60,31 @@ const pasta = $("#pas");
 const pizza = $("#piz");
 pasta.hide();
 pizza.hide();
+
 //itmg2.hide();
 
 let showIt = true;
 ib2.on("click", () => {
   if (showIt === true) {
-   
+    deleu();
     pasta.show();
     pizza.show();
-    
+    french.hide();
+    spain.hide();
+    british.hide();
+
     showIt = !showIt;
   } else {
-    europe.show();
-    showIt = !showIt;
     pasta.hide();
     pizza.hide();
+    french.show();
+    spain.show();
+    british.show();
+    showIt = !showIt;
   }
 });
 
-const french = $(".french");
+//const french = $(".french");
 const fb2 = $("<button>French</button>");
 french.append(fb2);
 fb2.css("font-size", "50px");
@@ -90,7 +100,7 @@ fb2.on("click", () => {
   }
 });
 
-const spain = $(".spain");
+//const spain = $(".spain");
 const bs2 = $("<button>Spain</button>");
 spain.append(bs2);
 bs2.css("font-size", "50px");
@@ -105,7 +115,7 @@ bs2.on("click", () => {
   }
 });
 
-const british = $(".british");
+//const british = $(".british");
 const bb2 = $("<button>British</button>");
 british.append(bb2);
 bb2.css("font-size", "50px");

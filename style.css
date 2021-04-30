@@ -1,12 +1,12 @@
 body {
   margin: 0px;
-  background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);
+  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
 }
 
 .main {
   display: grid;
   background-color: brown;
-  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
+  background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: red;
@@ -58,27 +58,32 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+/*
 #pas {
   display: flex;
   flex-direction: row;
   height: 400px;
   width: 400;
-  /*align-items: center;*/
-  font-size: 10;
+  /*align-items: center;
+  font-size: 30px;
 }
-#piz {
+*/
+
+/*
+piz {
   display: flex;
   flex-direction: row;
   height: 400px;
   width: 400;
-  font-size:10px ;
-  /*align-items: center;*/
+   font-size: 30px;
+  /*align-items: center;
+  
+  
+}*/
+#conf {
+  height: 400px;
+  width: 400;
 }
-
-
-
-
-
 
 .asia {
   border-style: solid;
