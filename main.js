@@ -74,10 +74,11 @@ ib2.on("click", () => {
   }
 });
 
-//const french = $(".french");
 const fb2 = $("<button>France</button>");
 french.append(fb2);
 fb2.css("font-size", "50px");
+const frimage =$(".frfood")
+frimage.hide()
 
 let showFr = true;
 fb2.on("click", () => {
@@ -85,49 +86,60 @@ fb2.on("click", () => {
     italy.hide();
     spain.hide();
     british.hide();
+    frimage.show()
     showFr = !showFr;
   } else {
     italy.show();
     spain.show();
     british.show();
+    frimage.hide()
     showFr = !showFr;
   }
 });
 
-//const spain = $(".spain");
 const bs2 = $("<button>Spain</button>");
 spain.append(bs2);
 bs2.css("font-size", "50px");
+const spimage =$(".spfood")
+spimage.hide();
 let showSp = true;
 bs2.on("click", () => {
   if (showSp === true) {
     italy.hide();
     french.hide();
     british.hide();
+    spimage.show();
     showSp = !showSp;
   } else {
     italy.show();
     french.show();
     british.show();
+    spimage.hide();
     showSp = !showSp;
   }
 });
 
-//const british = $(".british");
 const bb2 = $("<button>British</button>");
 british.append(bb2);
 bb2.css("font-size", "50px");
+const britmage =$(".britfood")
+britmage.hide(); 
+
 let showBr = true;
 bb2.on("click", () => {
   if (showBr === true) {
     italy.hide();
     french.hide();
     spain.hide();
+    britmage.show(); 
+
     showBr = !showBr;
   } else {
     italy.show();
     french.show();
     spain.show();
+    britmage.hide(); 
+
     showBr = !showBr;
   }
 });
