@@ -37,15 +37,7 @@ body {
   margin: 10px;
 }
 
-/*.leftNav {
-  display: flex;
-}*/
-
-/*.left {
-  height: 50px;
-  padding-left: 20px;
-}
-*/
+ 
 .fwd {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,6 +144,5 @@ body {
   text-align: center;
   margin-top: 300px;
 
-  /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
 }
