@@ -1,4 +1,12 @@
+if(!!localStorage.getItem("feeds")){
+  z= JSON.parse(localStorage.getItem("feeds"))
+}
+else{
+  z=[]
+}
+
 const body = $("body");
+
 const main = $(".main");
 const fwd = $(".fwd");
 //////////////////////////
@@ -387,3 +395,20 @@ argb.on("click", () => {
     showarg = !showarg;
   }
 });
+
+
+
+const feed = $("#feed")
+const dsjfkdfk =$("#")
+let x = []
+
+const feed_button =()=>{
+
+let obj ={
+  feed :feed.val()
+ }
+ x.push(obj)
+
+localStorage.setItem("feeds",JSON.stringify(z))
+x = JSON.parse(localStorage.getItem("feeds"))
+}
