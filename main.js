@@ -280,6 +280,8 @@ const amerca = $("#amc");
 const am2 = $("<button>America</button>");
 amerca.append(am2);
 am2.css("font-size", "10px");
+const usmg = $(".usmg");
+usmg.hide();
 
 am2.on("click", () => {
   delam();
@@ -297,11 +299,15 @@ usab.on("click", () => {
     canada.hide();
     brazil.hide();
     argin.hide();
+    usmg.show();
+
     showus = !showus;
   } else {
     canada.show();
     brazil.show();
     argin.show();
+    usmg.hide();
+
     showus = !showus;
   }
 });
@@ -310,6 +316,8 @@ const canada = $(".canada");
 const canb = $("<button>Canada</button>");
 canada.append(canb);
 canb.css("font-size", "50px");
+const canmg = $(".canmg");
+canmg.hide();
 
 let showca = true;
 canb.on("click", () => {
@@ -317,11 +325,15 @@ canb.on("click", () => {
     usa.hide();
     brazil.hide();
     argin.hide();
+    canmg.show();
+
     showca = !showca;
   } else {
     usa.show();
     brazil.show();
     argin.show();
+    canmg.hide();
+
     showca = !showca;
   }
 });
@@ -330,6 +342,8 @@ const brazil = $(".brazil");
 const brab = $("<button>Brazil</button>");
 brazil.append(brab);
 brab.css("font-size", "50px");
+const brmg = $(".brmg");
+brmg.hide();
 
 let showbr = true;
 brab.on("click", () => {
@@ -337,11 +351,14 @@ brab.on("click", () => {
     usa.hide();
     canada.hide();
     argin.hide();
+    brmg.show();
+
     showbr = !showbr;
   } else {
     usa.show();
     canada.show();
     argin.show();
+    brmg.hide();
     showbr = !showbr;
   }
 });
@@ -349,6 +366,8 @@ const argin = $(".argin");
 const argb = $("<button>Argentina</button>");
 argin.append(argb);
 argb.css("font-size", "50px");
+const argm = $(".argmg");
+argm.hide();
 
 let showarg = true;
 argb.on("click", () => {
@@ -356,11 +375,15 @@ argb.on("click", () => {
     usa.hide();
     canada.hide();
     brazil.hide();
+    argm.show();
+
     showarg = !showarg;
   } else {
     usa.show();
     brazil.show();
     canada.show();
+    argm.hide();
+
     showarg = !showarg;
   }
 });
