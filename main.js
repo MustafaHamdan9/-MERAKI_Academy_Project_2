@@ -170,7 +170,7 @@ as2.on("click", () => {
 const china = $(".china");
 const chb2 = $("<button>China</button>");
 china.append(chb2);
-chb2.css("font-size", "px");
+chb2.css("font-size", "40px");
 const chinmg = $(".chinmg");
 chinmg.hide();
 
