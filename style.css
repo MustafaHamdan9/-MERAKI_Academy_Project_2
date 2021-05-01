@@ -77,6 +77,7 @@ margin-right: 20px;
   background-color: lightgrey;
    font-size: 70px;
   border-radius: 10%/50%;
+  width: 500px;
 }
 
 #asi {
@@ -87,8 +88,10 @@ margin-right: 20px;
 .chinmg{
   font-size: 50px;
 
-
 }
+.mdmg{   font-size: 50px;
+}
+
 
 
 #afi {

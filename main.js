@@ -408,7 +408,7 @@ let obj ={
  }
  x.push(obj)
 
-localStorage.setItem("feeds",JSON.stringify(z))
+localStorage.setItem("feeds",JSON.stringify(x))
 x = JSON.parse(localStorage.getItem("feeds"))
 }
 
