@@ -14,7 +14,7 @@ america.hide();
 const home = $("#hme");
 const hme = $("<button>Home</button>");
 home.append(hme);
-hme.css("font-size", "10px");
+hme.css("font-size", "30px");
 
 hme.on("click", () => {
   europe.hide();
@@ -38,7 +38,7 @@ const deleu = () => {
 const eur = $("#eup");
 const eu2 = $("<button>Europe</button>");
 eur.append(eu2);
-eu2.css("font-size", "10px");
+eu2.css("font-size", "30px");
 
 eu2.on("click", () => {
   deleu();
@@ -47,7 +47,7 @@ eu2.on("click", () => {
 /////////////
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
-ib2.css("font-size", "50px");
+ib2.css("font-size", "40px");
 
 const pasta = $("#pas");
 const pizza = $("#piz");
@@ -76,7 +76,7 @@ ib2.on("click", () => {
 
 const fb2 = $("<button>France</button>");
 french.append(fb2);
-fb2.css("font-size", "50px");
+fb2.css("font-size", "40px");
 const frimage = $(".frfood");
 frimage.hide();
 
@@ -99,7 +99,7 @@ fb2.on("click", () => {
 
 const bs2 = $("<button>Spain</button>");
 spain.append(bs2);
-bs2.css("font-size", "50px");
+bs2.css("font-size", "40px");
 const spimage = $(".spfood");
 spimage.hide();
 let showSp = true;
@@ -121,7 +121,7 @@ bs2.on("click", () => {
 
 const bb2 = $("<button>British</button>");
 british.append(bb2);
-bb2.css("font-size", "50px");
+bb2.css("font-size", "40px");
 const britmage = $(".britfood");
 britmage.hide();
 
@@ -156,7 +156,7 @@ const delas = () => {
 const assia = $("#asi");
 const as2 = $("<button>Asia</button>");
 assia.append(as2);
-as2.css("font-size", "10px");
+as2.css("font-size", "30px");
 
 as2.on("click", () => {
   delas();
@@ -166,7 +166,7 @@ as2.on("click", () => {
 const china = $(".china");
 const chb2 = $("<button>China</button>");
 china.append(chb2);
-chb2.css("font-size", "50px");
+chb2.css("font-size", "40px");
 const chinmg = $(".chinmg");
 chinmg.hide();
 
@@ -190,7 +190,7 @@ chb2.on("click", () => {
 const Midest = $(".Midest");
 const mdb2 = $("<button>Midest</button>");
 Midest.append(mdb2);
-mdb2.css("font-size", "50px");
+mdb2.css("font-size", "40px");
 
 const mdemg = $(".mdmg");
 mdemg.hide();
@@ -216,7 +216,7 @@ mdb2.on("click", () => {
 const Korea = $(".Korea");
 const kb2 = $("<button>Korea</button>");
 Korea.append(kb2);
-kb2.css("font-size", "50px");
+kb2.css("font-size", "40px");
 const kormg = $(".kormg");
 kormg.hide();
 
@@ -242,7 +242,7 @@ kb2.on("click", () => {
 const japan = $(".japan");
 const jb2 = $("<button>Japan</button>");
 japan.append(jb2);
-jb2.css("font-size", "50px");
+jb2.css("font-size", "40px");
 const jpmg = $(".jpmg");
 
 jpmg.hide();
@@ -279,7 +279,7 @@ const delam = () => {
 const amerca = $("#amc");
 const am2 = $("<button>America</button>");
 amerca.append(am2);
-am2.css("font-size", "10px");
+am2.css("font-size", "30px");
 const usmg = $(".usmg");
 usmg.hide();
 
@@ -291,7 +291,7 @@ am2.on("click", () => {
 const usa = $(".usa");
 const usab = $("<button>USA</button>");
 usa.append(usab);
-usab.css("font-size", "50px");
+usab.css("font-size", "40px");
 
 let showus = true;
 usab.on("click", () => {
@@ -315,7 +315,7 @@ usab.on("click", () => {
 const canada = $(".canada");
 const canb = $("<button>Canada</button>");
 canada.append(canb);
-canb.css("font-size", "50px");
+canb.css("font-size", "40px");
 const canmg = $(".canmg");
 canmg.hide();
 
@@ -341,7 +341,7 @@ canb.on("click", () => {
 const brazil = $(".brazil");
 const brab = $("<button>Brazil</button>");
 brazil.append(brab);
-brab.css("font-size", "50px");
+brab.css("font-size", "40px");
 const brmg = $(".brmg");
 brmg.hide();
 
@@ -365,7 +365,7 @@ brab.on("click", () => {
 const argin = $(".argin");
 const argb = $("<button>Argentina</button>");
 argin.append(argb);
-argb.css("font-size", "50px");
+argb.css("font-size", "40px");
 const argm = $(".argmg");
 argm.hide();
 
