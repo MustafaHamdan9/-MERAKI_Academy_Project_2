@@ -109,9 +109,18 @@ body {
   width: 500px;
 }
 
-.usmg{ font-size: 50px;}
-
-
+.usmg {
+  font-size: 50px;
+}
+.canmg {
+  font-size: 50px;
+}
+.brmg {
+  font-size: 50px;
+}
+.argmg {
+  font-size: 50px;
+}
 
 #ami {
   color: white;
