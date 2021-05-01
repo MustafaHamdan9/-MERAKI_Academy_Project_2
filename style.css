@@ -1,22 +1,23 @@
 body {
   margin: 0px;
   background-image: url(https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   background-size: cover;
+}
 
-  }
-
-.fwd{ font-size: 100px;
-color : red ;
-margin-right: 20px;
+.fwd {
+  font-size: 100px;
+  color: red;
+  margin-right: 20px;
   margin-left: 650px;
 }
 
-#hme{
+#hme {
   display: flex;
   margin-right: 30px;
-  margin-left: 300 ;
-  margin-top: 100px;}
+  margin-left: 300;
+  margin-top: 100px;
+}
 
 .main {
   display: grid;
@@ -24,7 +25,7 @@ margin-right: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: red;
- }
+}
 
 #navBar {
   display: flex;
@@ -47,10 +48,10 @@ margin-right: 20px;
 */
 .fwd {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   margin-top: 100px;
- }
+}
 
 .eur {
   border-style: solid;
@@ -59,14 +60,9 @@ margin-right: 20px;
   margin-right: 20px;
   margin-left: 20px;
   background-color: lightgrey;
-   font-size: 70px;
+  font-size: 70px;
   border-radius: 10%/50%;
 }
-
-
-
- 
- 
 
 .asia {
   border-style: solid;
@@ -75,7 +71,7 @@ margin-right: 20px;
   margin-right: 20px;
   margin-left: 20px;
   background-color: lightgrey;
-   font-size: 70px;
+  font-size: 70px;
   border-radius: 10%/50%;
   width: 500px;
 }
@@ -85,19 +81,21 @@ margin-right: 20px;
   font-size: 100px;
 }
 
-.chinmg{
+.chinmg {
   font-size: 50px;
-
 }
-.mdmg{   font-size: 50px;
+.mdmg {
+  font-size: 50px;
 }
 
-
-
-#afi {
-  color: deepskyblue;
-  font-size: 100px;
+.kormg {
+  font-size: 50px;
 }
+
+.jpmg {
+  font-size: 50px;
+}
+/*/////////////////////////////////////////////*/
 
 .america {
   border-style: solid;
@@ -106,9 +104,14 @@ margin-right: 20px;
   margin-right: 10px;
   margin-left: 10px;
   background-color: lightgrey;
-   font-size: 70px;
+  font-size: 70px;
   border-radius: 10%/50%;
+  width: 500px;
 }
+
+.usmg{ font-size: 50px;}
+
+
 
 #ami {
   color: white;
@@ -125,7 +128,7 @@ margin-right: 20px;
   font-size: 100px;
   text-align: center;
   margin-top: 300px;
-  
+
   /*background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);*/
   background-repeat: no-repeat;
 }
