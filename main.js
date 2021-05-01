@@ -399,8 +399,7 @@ argb.on("click", () => {
 
 
 const feed = $("#feed")
-const dsjfkdfk =$("#")
-let x = []
+ let x = []
 
 const feed_button =()=>{
 
@@ -412,3 +411,10 @@ let obj ={
 localStorage.setItem("feeds",JSON.stringify(z))
 x = JSON.parse(localStorage.getItem("feeds"))
 }
+
+const feedb = $("#fedbk")
+
+feedb.on("click", () => {
+  feed_button()
+   
+});
