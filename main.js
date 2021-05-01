@@ -1,8 +1,7 @@
-if(!!localStorage.getItem("feeds")){
-  z= JSON.parse(localStorage.getItem("feeds"))
-}
-else{
-  z=[]
+if (!!localStorage.getItem("feeds")) {
+  z = JSON.parse(localStorage.getItem("feeds"));
+} else {
+  z = [];
 }
 
 const body = $("body");
@@ -46,7 +45,7 @@ const deleu = () => {
 const eur = $("#eup");
 const eu2 = $("<button>Europe</button>");
 eur.append(eu2);
-eu2.css("font-size", "10px");
+eu2.css("font-size", "50px");
 
 eu2.on("click", () => {
   deleu();
@@ -57,24 +56,21 @@ const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
 ib2.css("font-size", "40px");
 
-const pasta = $("#pas");
-const pizza = $("#piz");
-pasta.hide();
-pizza.hide();
+const itmg = $(".itmg");
+itmg.hide();
 
 let showIt = true;
 ib2.on("click", () => {
   if (showIt === true) {
-    pasta.show();
-    pizza.show();
+    itmg.show();
     french.hide();
     spain.hide();
     british.hide();
 
     showIt = !showIt;
   } else {
-    pasta.hide();
-    pizza.hide();
+    itmg.hide();
+
     french.show();
     spain.show();
     british.show();
@@ -164,7 +160,7 @@ const delas = () => {
 const assia = $("#asi");
 const as2 = $("<button>Asia</button>");
 assia.append(as2);
-as2.css("font-size", "30px");
+as2.css("font-size", "50px");
 
 as2.on("click", () => {
   delas();
@@ -174,7 +170,7 @@ as2.on("click", () => {
 const china = $(".china");
 const chb2 = $("<button>China</button>");
 china.append(chb2);
-chb2.css("font-size", "40px");
+chb2.css("font-size", "px");
 const chinmg = $(".chinmg");
 chinmg.hide();
 
@@ -287,7 +283,7 @@ const delam = () => {
 const amerca = $("#amc");
 const am2 = $("<button>America</button>");
 amerca.append(am2);
-am2.css("font-size", "30px");
+am2.css("font-size", "50px");
 const usmg = $(".usmg");
 usmg.hide();
 
@@ -396,25 +392,21 @@ argb.on("click", () => {
   }
 });
 
+const feed = $("#feed");
+let x = [];
 
+const feed_button = () => {
+  let obj = {
+    feed: feed.val(),
+  };
+  x.push(obj);
 
-const feed = $("#feed")
- let x = []
+  localStorage.setItem("feeds", JSON.stringify(x));
+  x = JSON.parse(localStorage.getItem("feeds"));
+};
 
-const feed_button =()=>{
-
-let obj ={
-  feed :feed.val()
- }
- x.push(obj)
-
-localStorage.setItem("feeds",JSON.stringify(x))
-x = JSON.parse(localStorage.getItem("feeds"))
-}
-
-const feedb = $("#fedbk")
+const feedb = $("#fedbk");
 
 feedb.on("click", () => {
-  feed_button()
-   
+  feed_button();
 });
