@@ -15,8 +15,10 @@ body {
 #hme {
   display: flex;
   margin-right: 30px;
-  margin-left: 300;
-  margin-top: 100px;
+  margin-left: 350;
+  margin-top: 150px;
+  text-align: center;
+
 }
 
 .main {
@@ -29,8 +31,7 @@ body {
 
 #navBar {
   display: flex;
-  /* align-items: flex-start;
-  text-align: center; */
+  
   justify-content: space-between;
   background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);
   padding: 20px;
