@@ -77,8 +77,8 @@ ib2.on("click", () => {
 const fb2 = $("<button>France</button>");
 french.append(fb2);
 fb2.css("font-size", "50px");
-const frimage =$(".frfood")
-frimage.hide()
+const frimage = $(".frfood");
+frimage.hide();
 
 let showFr = true;
 fb2.on("click", () => {
@@ -86,13 +86,13 @@ fb2.on("click", () => {
     italy.hide();
     spain.hide();
     british.hide();
-    frimage.show()
+    frimage.show();
     showFr = !showFr;
   } else {
     italy.show();
     spain.show();
     british.show();
-    frimage.hide()
+    frimage.hide();
     showFr = !showFr;
   }
 });
@@ -100,7 +100,7 @@ fb2.on("click", () => {
 const bs2 = $("<button>Spain</button>");
 spain.append(bs2);
 bs2.css("font-size", "50px");
-const spimage =$(".spfood")
+const spimage = $(".spfood");
 spimage.hide();
 let showSp = true;
 bs2.on("click", () => {
@@ -122,8 +122,8 @@ bs2.on("click", () => {
 const bb2 = $("<button>British</button>");
 british.append(bb2);
 bb2.css("font-size", "50px");
-const britmage =$(".britfood")
-britmage.hide(); 
+const britmage = $(".britfood");
+britmage.hide();
 
 let showBr = true;
 bb2.on("click", () => {
@@ -131,20 +131,20 @@ bb2.on("click", () => {
     italy.hide();
     french.hide();
     spain.hide();
-    britmage.show(); 
+    britmage.show();
 
     showBr = !showBr;
   } else {
     italy.show();
     french.show();
     spain.show();
-    britmage.hide(); 
+    britmage.hide();
 
     showBr = !showBr;
   }
 });
 
-//////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 const delas = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== asia) {
@@ -167,17 +167,22 @@ const china = $(".china");
 const chb2 = $("<button>China</button>");
 china.append(chb2);
 chb2.css("font-size", "50px");
+const chinmg = $(".chinmg");
+chinmg.hide();
+
 let showch = true;
 chb2.on("click", () => {
   if (showch === true) {
     Midest.hide();
     Korea.hide();
     japan.hide();
+    chinmg.show();
     showch = !showch;
   } else {
     Midest.show();
     Korea.show();
     japan.show();
+    chinmg.hide();
     showch = !showch;
   }
 });
@@ -186,17 +191,24 @@ const Midest = $(".Midest");
 const mdb2 = $("<button>Midest</button>");
 Midest.append(mdb2);
 mdb2.css("font-size", "50px");
+
+const mdemg = $(".mdmg");
+mdemg.hide();
 let showmd = true;
 mdb2.on("click", () => {
   if (showmd === true) {
     china.hide();
     Korea.hide();
     japan.hide();
+    mdemg.show();
+
     showmd = !showmd;
   } else {
     china.show();
     Korea.show();
     japan.show();
+    mdemg.hide();
+
     showmd = !showmd;
   }
 });
@@ -205,17 +217,24 @@ const Korea = $(".Korea");
 const kb2 = $("<button>Korea</button>");
 Korea.append(kb2);
 kb2.css("font-size", "50px");
+const kormg = $(".kormg");
+kormg.hide();
+
 let showko = true;
 kb2.on("click", () => {
   if (showko === true) {
     china.hide();
     Midest.hide();
     japan.hide();
+    kormg.show();
+
     showko = !showko;
   } else {
     china.show();
     Midest.show();
     japan.show();
+    kormg.hide();
+
     showko = !showko;
   }
 });
@@ -224,17 +243,25 @@ const japan = $(".japan");
 const jb2 = $("<button>Japan</button>");
 japan.append(jb2);
 jb2.css("font-size", "50px");
+const jpmg = $(".jpmg");
+
+jpmg.hide();
+
 let showjp = true;
 jb2.on("click", () => {
   if (showjp === true) {
     china.hide();
     Midest.hide();
     Korea.hide();
+    jpmg.show();
+
     showjp = !showjp;
   } else {
     china.show();
     Midest.show();
     Korea.show();
+    jpmg.hide();
+
     showjp = !showjp;
   }
 });
@@ -307,9 +334,9 @@ brab.css("font-size", "50px");
 let showbr = true;
 brab.on("click", () => {
   if (showbr === true) {
-    usa.show();
-    canada.show();
-    argin.show();
+    usa.hide();
+    canada.hide();
+    argin.hide();
     showbr = !showbr;
   } else {
     usa.show();
@@ -326,9 +353,9 @@ argb.css("font-size", "50px");
 let showarg = true;
 argb.on("click", () => {
   if (showarg === true) {
-    usa.show();
-    canada.show();
-    brazil.show();
+    usa.hide();
+    canada.hide();
+    brazil.hide();
     showarg = !showarg;
   } else {
     usa.show();
