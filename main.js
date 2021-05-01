@@ -46,7 +46,7 @@ const deleu = () => {
 const eur = $("#eup");
 const eu2 = $("<button>Europe</button>");
 eur.append(eu2);
-eu2.css("font-size", "30px");
+eu2.css("font-size", "10px");
 
 eu2.on("click", () => {
   deleu();
