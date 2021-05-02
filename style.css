@@ -1,9 +1,9 @@
 body {
   margin: 0px;
-  background-image: url(https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover;}
+
+   
+
 
 .fwd {
   font-size: 100px;
@@ -12,31 +12,16 @@ body {
   margin-left: 700px;
 }
 
-#hme {
-  display: flex;
-  margin-right: 30px;
-  margin-left: 350;
-  margin-top: 150px;
-  text-align: center;
+ 
 
-}
 
-.main {
+
+.Nav {
   display: grid;
-  background-image: url(https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#navBar {
-  display: flex;
-  
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  background-image: url(https://media.istockphoto.com/photos/healthy-food-take-away-in-boxes-background-on-black-picture-id846317640);
-  padding: 10px;
-   margin-bottom:100px ;
-
+  background-color: lightgrey;
+  
 }
 
  
@@ -53,8 +38,8 @@ body {
   border-style: solid;
   border-color: black;
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   background-color: lightgrey;
   font-size: 70px;
   border-radius: 10%/50%;
@@ -86,10 +71,7 @@ body {
   width: 500px;
 }
 
-#asi {
-  color: darkblue;
-  font-size: 100px;
-}
+ 
 
 .chinmg {
   font-size: 50px;
@@ -132,12 +114,14 @@ body {
   font-size: 50px;
 }
 
-#ami {
-  color: white;
-  font-size: 100px;
-}
+ 
+
+input{ font-size: 20px;}
+
 
 .feedback {
+
+  position: bottom ;
   border-style: solid;
   border-color: white;
   display: flex;
@@ -146,7 +130,9 @@ body {
   margin-left: 100px;
   font-size: 100px;
   text-align: center;
-  margin-top: 300px;
-
+  margin-top: 100px;
    background-repeat: no-repeat;
-}
+   position: fixed;
+  width: 50%;
+  bottom: 10px;
+ }

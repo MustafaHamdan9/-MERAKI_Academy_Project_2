@@ -406,7 +406,7 @@ const feed_button = () => {
 };
 
 const feedb = $("#fedbk");
-
+feedb.css("font-size", "40px");
 feedb.on("click", () => {
   feed_button();
 });
