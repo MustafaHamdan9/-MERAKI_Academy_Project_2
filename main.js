@@ -13,24 +13,47 @@ const europe = $(".eur");
 const asia = $(".asia");
 const africa = $(".africa");
 const america = $(".america");
+const abt  = $(".abt");
 
 fwdx = [asia, europe, america, africa];
 europe.hide();
 asia.hide();
 america.hide();
 africa.hide();
-
+abt.hide();
 const home = $("#hme");
 const hme = $("<button>Home</button>");
 home.append(hme);
-hme.css("font-size", "30px");
+hme.css({"font-size": "25px","padding": 0,
+"border": "none", "font-weight": "bold",
+"background": "none" ,"opacity": 1 ,"font-weight": "bold",});
+
 
 hme.on("click", () => {
   europe.hide();
   asia.hide();
   america.hide();
   africa.hide();
+  abt.hide();
 });
+
+const aboute  = $("#about");
+const about = $("<button>About</button>");
+aboute.append(about);
+about.css({"font-size": "25px","padding": 0,
+"border": "none", "font-weight": "bold",
+"background": "none" ,"opacity": 1 ,"font-weight": "bold",});
+
+about.on("click", () => {
+  europe.hide();
+  asia.hide();
+  america.hide();
+  africa.hide();
+  abt.show();
+
+}); 
+
+
 ///////////////////////////////////////////
 const french = $(".french");
 const spain = $(".spain");
@@ -50,16 +73,21 @@ const deleu = () => {
 const eur = $("#eup");
 const eu2 = $("<button>Europe</button>");
 eur.append(eu2);
-eu2.css("font-size", "50px");
+eu2.css({"font-size": "25px","padding": 0,
+"border": "none",
+"background": "none","font-weight": "bold"});
 
 eu2.on("click", () => {
   deleu();
   europe.show();
+  abt.hide();
 });
 /////////////////////////////////
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
-ib2.css("font-size", "30px");
+ib2.css({"font-size": "40px","padding": 0,
+"border": "none",
+"background": "none"});
 
 const itmg = $(".itmg");
 itmg.hide();
@@ -85,7 +113,9 @@ ib2.on("click", () => {
 
 const fb2 = $("<button>France</button>");
 french.append(fb2);
-fb2.css("font-size", "40px");
+fb2.css({"font-size": "40px","padding": 0,
+"border": "none",
+"background": "none"});
 const frimage = $(".frfood");
 frimage.hide();
 
@@ -108,7 +138,9 @@ fb2.on("click", () => {
 
 const bs2 = $("<button>Spain</button>");
 spain.append(bs2);
-bs2.css("font-size", "40px");
+bs2.css({"font-size": "40px","padding": 0,
+"border": "none",
+"background": "none"});
 const spimage = $(".spfood");
 spimage.hide();
 let showSp = true;
@@ -130,7 +162,9 @@ bs2.on("click", () => {
 
 const bb2 = $("<button>British</button>");
 british.append(bb2);
-bb2.css("font-size", "40px");
+bb2.css({"font-size": "40px","padding": 0,
+"border": "none",
+"background": "none"});
 const britmage = $(".britfood");
 britmage.hide();
 
@@ -172,17 +206,22 @@ const delas = () => {
 const assia = $("#asi");
 const as2 = $("<button>Asia</button>");
 assia.append(as2);
-as2.css("font-size", "30px");
+as2.css({"font-size": "25px","padding": 0,
+"border": "none","font-weight": "bold",
+"background": "none"});
 
 as2.on("click", () => {
   delas();
   asia.show();
+  abt.hide();
 });
 /////////
 
 const chb2 = $("<button>China</button>");
 china.append(chb2);
-chb2.css("font-size", "40px");
+chb2.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 const chinmg = $(".chinmg");
 chinmg.hide();
 
@@ -205,7 +244,9 @@ chb2.on("click", () => {
 
 const mdb2 = $("<button>Midest</button>");
 Midest.append(mdb2);
-mdb2.css("font-size", "40px");
+mdb2.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 
 const mdemg = $(".mdmg");
 mdemg.hide();
@@ -230,7 +271,9 @@ mdb2.on("click", () => {
 
 const kb2 = $("<button>Korea</button>");
 Korea.append(kb2);
-kb2.css("font-size", "40px");
+kb2.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 const kormg = $(".kormg");
 kormg.hide();
 
@@ -255,7 +298,9 @@ kb2.on("click", () => {
 
 const jb2 = $("<button>Japan</button>");
 japan.append(jb2);
-jb2.css("font-size", "40px");
+jb2.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 const jpmg = $(".jpmg");
 
 jpmg.hide();
@@ -291,6 +336,7 @@ const delam = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== america) {
       fwdx[i].css("display", "none");
+      
     }
   }
 };
@@ -298,18 +344,23 @@ const delam = () => {
 const amerca = $("#amc");
 const am2 = $("<button>America</button>");
 amerca.append(am2);
-am2.css("font-size", "30px");
+am2.css({"font-size": "25px","padding": 0,
+"border": "none",
+"background": "none","font-weight": "bold"});
 const usmg = $(".usmg");
 usmg.hide();
 
 am2.on("click", () => {
   delam();
   america.show();
+  abt.hide();
 });
 
 const usab = $("<button>USA</button>");
 usa.append(usab);
-usab.css("font-size", "40px");
+usab.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 
 let showus = true;
 usab.on("click", () => {
@@ -332,7 +383,9 @@ usab.on("click", () => {
 
 const canb = $("<button>Canada</button>");
 canada.append(canb);
-canb.css("font-size", "40px");
+canb.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 const canmg = $(".canmg");
 canmg.hide();
 
@@ -357,7 +410,9 @@ canb.on("click", () => {
 
 const brab = $("<button>Brazil</button>");
 brazil.append(brab);
-brab.css("font-size", "40px");
+brab.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 const brmg = $(".brmg");
 brmg.hide();
 
@@ -380,7 +435,9 @@ brab.on("click", () => {
 });
 const argb = $("<button>Argentina</button>");
 argin.append(argb);
-argb.css("font-size", "40px");
+argb.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 const argm = $(".argmg");
 argm.hide();
 
@@ -403,12 +460,6 @@ argb.on("click", () => {
   }
 });
 ////////////////////////////
-const egypt = $(".egypt");
-const moroco = $(".moroco");
-const tunisia = $(".tunisia");
-const libia = $(".Libya");
-
-afx = [egypt, moroco, tunisia, libia];
 
 const delaf = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
@@ -417,27 +468,31 @@ const delaf = () => {
     }
   }
 };
-const afric = $("#afr");
+const Africa = $("#afr");
 const af2 = $("<button>Africa</button>");
-afric.append(af2);
-af2.css("font-size", "30px");
+Africa.append(af2);
+af2.css({"font-size": "25px","padding": 0,
+"border": "none",
+"background": "none","font-weight": "bold"});
 
 af2.on("click", () => {
   delaf();
-  
-
+  africa.show();
+  abt.hide();
 });
 
 ///////////////////////////////////////////////////////////////////////
 
 
+const egypt = $(".egypt");
 const egyb = $("<button>Egypt</button>");
 egypt.append(egyb);
-egyb.css("font-size", "40px");
+egyb.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 
 let showegp = true;
 egyb.on("click", () => {
- 
   if (showegp === true) {
     tunisia.hide();
     moroco.hide();
@@ -454,10 +509,12 @@ egyb.on("click", () => {
 });
 
 ///////////////////////////////////////////////////////////////////////////
-
+const moroco = $(".moroco");
 const morob = $("<button>Moroco</button>");
 moroco.append(morob);
-morob.css("font-size", "40px");
+morob.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 
 let showmor = true;
 morob.on("click", () => {
@@ -476,9 +533,12 @@ morob.on("click", () => {
   }
 });
 ////////////////////////////////////////////////////////
+const tunisia = $(".tunisia");
 const tunsb = $("<button>Tunisia</button>");
 tunisia.append(tunsb);
-tunsb.css("font-size", "40px");
+tunsb.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 
 let showtun = true;
 tunsb.on("click", () => {
@@ -498,9 +558,12 @@ tunsb.on("click", () => {
 });
 
 /////////////////////////////////////////////////////
+const libia = $(".Libia");
 const libb = $("<button>Libya</button>");
 libia.append(libb);
-libb.css("font-size", "40px");
+libb.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 
 let showlp = true;
 libb.on("click", () => {
@@ -519,18 +582,12 @@ libb.on("click", () => {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-
 /////////////////////////
+
+
+ 
+
+
 const feed = $("#feed");
 let x = [];
 
@@ -545,12 +602,14 @@ const feed_button = () => {
 };
 
 const feedb = $("#fedbk");
-feedb.css("font-size", "40px");
+feedb.css({"font-size": "30px","padding": 0,
+"border": "none",
+"background": "none"});
 feedb.on("click", () => {
   feed_button();
 });
 
-const add = $("#add");
+//const add = $("#add");
 
 /*add.on("click", () => {
   add();

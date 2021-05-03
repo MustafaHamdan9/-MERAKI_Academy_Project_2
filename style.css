@@ -5,6 +5,8 @@ body {
 }
 
 .Nav {
+  /*opacity: 0.5;*/
+  background-color: rgba(222, 184, 135, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +16,16 @@ body {
 
 #hme {
   padding-left: 3rem;
+  padding: 0;
+  border: none;
+  background: none;
+  margin-left: 10px;
+  color: red;
+}
+
+#hme:hover {
+  background-color: burlywood;
+  color: red;
 }
 
 #links {
@@ -27,12 +39,12 @@ body {
 
 #maintitle {
   font-size: 100px;
-  color: red;
+  /*color: red;*/
 
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 350px;
 }
 
 .fwd {
@@ -46,14 +58,14 @@ body {
 }
 
 .eur {
-  border-style: solid;
-  border-color: black;
+  /*border-style: solid;
+  border-color: black;*/
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: lightgrey;
+  margin-right: auto;
+  margin-left: 120px;
+  /*background-color: lightgrey;*/
   font-size: 40px;
-  border-radius: 10%/50%;
+  /*border-radius: 10%/50%;*/
   width: 500px;
 }
 .frfood {
@@ -71,20 +83,32 @@ body {
 }
 
 .asia {
-  border-style: solid;
+  background-image: url(https://cdn2.vectorstock.com/i/1000x1000/21/41/asia-travel-background-with-place-for-text-vector-7562141.jpg);
+  border-style: double;
   border-color: black;
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: lightgrey;
-  font-size: 40px;
+  margin-right: auto;
+  margin-left: 120px;
+  /*background-color: lightgrey;*/
+  font-size: 60px;
   border-radius: 10%/50%;
-  width: 500px;
+  width: 1000px;
+  font-weight: bold;
+  color: azure;
 }
 
 .chinmg {
-  font-size: 50px;
+  border-style: none;
+  /*font-size: 10px;
+width: auto;*/
 }
+
+/*.china{display: grid;
+  grid-template-columns: 1fr 1fr;
+width: auto;
+height: auto ;
+}*/
+
 .mdmg {
   font-size: 50px;
 }
@@ -99,14 +123,14 @@ body {
 /*/////////////////////////////////////////////*/
 
 .america {
-  border-style: solid;
-  border-color: black;
+  /*border-style: solid;
+  border-color: black;*/
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: lightgrey;
+  margin-right: auto;
+  margin-left: 120px;
+  /*background-color: lightgrey;*/
   font-size: 40px;
-  border-radius: 10%/50%;
+  /*border-radius: 10%/50%;*/
   width: 500px;
 }
 
@@ -124,49 +148,63 @@ body {
 }
 
 .africa {
-  border-style: solid;
-  border-color: black;
+  /*border-style: solid;
+  border-color: black;*/
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: lightgrey;
+  margin-right: auto;
+  margin-left: 120px;
+  /*background-color: lightgrey;*/
   font-size: 40px;
-  border-radius: 10%/50%;
+  /*border-radius: 10%/50%;*/
   width: 500px;
 }
-
-
-
-
-
-
-
-
-
-
+.abt {
+  /*border-style: solid;
+  border-color: black;*/
+  padding: 10px;
+  margin-right: auto;
+  margin-left: 120px;
+  background-color: rgba(222, 184, 135, 0.5);
+  font-size: 50px;
+  border-radius: 10%/50%;
+  width: 1000px;
+}
 
 input {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .feedback {
   grid-template-columns: 1fr, 1fr;
   position: bottom;
-  border-style: solid;
-  border-color: white;
+  /*border-style: solid;
+  border-radius: 10%/50%;
+  border-color: white;*/
   display: flex;
-  background-color: white;
-  margin-right: 100px;
-  margin-left: 100px;
-  font-size: 100px;
+  /* background-color: white;*/
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 20px;
   text-align: center;
-  margin-top: 100px;
-  background-repeat: no-repeat;
+  margin-top: 50px;
   position: fixed;
-  width: 50%;
+  border-style: none;
+
   bottom: 10px;
+  font-weight: bold;
+  background-color: rgba(222, 184, 135, 0.5);
+}
+#fedbk {
+  font-weight: bold;
+  width: auto;
+  border-style: none;
 }
 
+#feed {
+  background-color: rgba(216, 206, 192, 0.5);
+
+  border-style: none;
+}
 /*#add {
   font-size: 50px;
   width: 300px;
