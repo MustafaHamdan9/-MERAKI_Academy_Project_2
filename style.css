@@ -39,7 +39,7 @@ body {
   background-color: burlywood;
  }
 
- #afr:hover{
+ .afrh:hover{
   background-color: burlywood;
  }
 
@@ -86,7 +86,7 @@ body {
    font-size: 60px;
    width: 1000px;
   font-weight: bold;
-  color: wheat;
+  color: white;
   background-size: cover;
 }
 .frfood {
@@ -113,7 +113,7 @@ body {
 border-style: none;
    width: 1000px;
   font-weight: bold;
-  color: azure;
+  color: white;
   background-size: cover;
 }
 .china{color: white;}
@@ -137,8 +137,7 @@ border-style: none;
 /*/////////////////////////////////////////////*/
 
 .america {
-  border-style: double;
-  border-color: black;
+   
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
@@ -163,10 +162,9 @@ border-style: none;
 .argmg {
   font-size: 50px;
 }
-
+/*////////////////////////////*/
 .africa {
-   border-style: double;
-  border-color: black;
+    
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
@@ -174,7 +172,7 @@ border-style: none;
   border-radius: 10%/50%;
   width: 1000px;
   font-weight: bold;
-  color: black;
+  color: azure;
   background-size: cover;
 }
 .abt {
