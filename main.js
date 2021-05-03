@@ -11,12 +11,14 @@ const fwd = $(".fwd");
 //////////////////////////
 const europe = $(".eur");
 const asia = $(".asia");
-
+const africa = $(".africa");
 const america = $(".america");
-fwdx = [asia, europe, america];
+
+fwdx = [asia, europe, america, africa];
 europe.hide();
 asia.hide();
 america.hide();
+africa.hide();
 
 const home = $("#hme");
 const hme = $("<button>Home</button>");
@@ -27,12 +29,15 @@ hme.on("click", () => {
   europe.hide();
   asia.hide();
   america.hide();
+  africa.hide();
 });
 ///////////////////////////////////////////
 const french = $(".french");
 const spain = $(".spain");
 const british = $(".british");
 const italy = $(".italy");
+
+eux = [french, spain, british, italy];
 
 const deleu = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
@@ -51,10 +56,10 @@ eu2.on("click", () => {
   deleu();
   europe.show();
 });
-/////////////
+/////////////////////////////////
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
-ib2.css("font-size", "40px");
+ib2.css("font-size", "30px");
 
 const itmg = $(".itmg");
 itmg.hide();
@@ -149,6 +154,13 @@ bb2.on("click", () => {
 });
 
 /////////////////////////////////////////////////////////////////
+const china = $(".china");
+const Midest = $(".Midest");
+const Korea = $(".Korea");
+const japan = $(".japan");
+
+asix = [china, Midest, Korea, japan];
+
 const delas = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== asia) {
@@ -160,14 +172,14 @@ const delas = () => {
 const assia = $("#asi");
 const as2 = $("<button>Asia</button>");
 assia.append(as2);
-as2.css("font-size", "50px");
+as2.css("font-size", "30px");
 
 as2.on("click", () => {
   delas();
   asia.show();
 });
 /////////
-const china = $(".china");
+
 const chb2 = $("<button>China</button>");
 china.append(chb2);
 chb2.css("font-size", "40px");
@@ -191,7 +203,6 @@ chb2.on("click", () => {
   }
 });
 
-const Midest = $(".Midest");
 const mdb2 = $("<button>Midest</button>");
 Midest.append(mdb2);
 mdb2.css("font-size", "40px");
@@ -217,7 +228,6 @@ mdb2.on("click", () => {
   }
 });
 
-const Korea = $(".Korea");
 const kb2 = $("<button>Korea</button>");
 Korea.append(kb2);
 kb2.css("font-size", "40px");
@@ -243,7 +253,6 @@ kb2.on("click", () => {
   }
 });
 
-const japan = $(".japan");
 const jb2 = $("<button>Japan</button>");
 japan.append(jb2);
 jb2.css("font-size", "40px");
@@ -271,6 +280,12 @@ jb2.on("click", () => {
 });
 
 //////////////////////////////////////////////////////////////
+const usa = $(".usa");
+const canada = $(".canada");
+const brazil = $(".brazil");
+const argin = $(".argin");
+
+amx = [usa, canada, brazil, argin];
 
 const delam = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
@@ -283,7 +298,7 @@ const delam = () => {
 const amerca = $("#amc");
 const am2 = $("<button>America</button>");
 amerca.append(am2);
-am2.css("font-size", "50px");
+am2.css("font-size", "30px");
 const usmg = $(".usmg");
 usmg.hide();
 
@@ -292,7 +307,6 @@ am2.on("click", () => {
   america.show();
 });
 
-const usa = $(".usa");
 const usab = $("<button>USA</button>");
 usa.append(usab);
 usab.css("font-size", "40px");
@@ -316,7 +330,6 @@ usab.on("click", () => {
   }
 });
 
-const canada = $(".canada");
 const canb = $("<button>Canada</button>");
 canada.append(canb);
 canb.css("font-size", "40px");
@@ -342,7 +355,6 @@ canb.on("click", () => {
   }
 });
 
-const brazil = $(".brazil");
 const brab = $("<button>Brazil</button>");
 brazil.append(brab);
 brab.css("font-size", "40px");
@@ -366,7 +378,6 @@ brab.on("click", () => {
     showbr = !showbr;
   }
 });
-const argin = $(".argin");
 const argb = $("<button>Argentina</button>");
 argin.append(argb);
 argb.css("font-size", "40px");
@@ -391,7 +402,135 @@ argb.on("click", () => {
     showarg = !showarg;
   }
 });
+////////////////////////////
+const egypt = $(".egypt");
+const moroco = $(".moroco");
+const tunisia = $(".tunisia");
+const libia = $(".Libya");
 
+afx = [egypt, moroco, tunisia, libia];
+
+const delaf = () => {
+  for (i = 0; i <= fwdx.length - 1; i++) {
+    if (fwdx[i] !== africa) {
+      fwdx[i].css("display", "none");
+    }
+  }
+};
+const afric = $("#afr");
+const af2 = $("<button>Africa</button>");
+afric.append(af2);
+af2.css("font-size", "30px");
+
+af2.on("click", () => {
+  delaf();
+  
+
+});
+
+///////////////////////////////////////////////////////////////////////
+
+
+const egyb = $("<button>Egypt</button>");
+egypt.append(egyb);
+egyb.css("font-size", "40px");
+
+let showegp = true;
+egyb.on("click", () => {
+ 
+  if (showegp === true) {
+    tunisia.hide();
+    moroco.hide();
+    libia.hide();
+
+    showegp = !showegp;
+  } else {
+    tunisia.show();
+    moroco.show();
+    libia.show();
+
+    showegp = !showegp;
+  }
+});
+
+///////////////////////////////////////////////////////////////////////////
+
+const morob = $("<button>Moroco</button>");
+moroco.append(morob);
+morob.css("font-size", "40px");
+
+let showmor = true;
+morob.on("click", () => {
+  if (showmor === true) {
+    egypt.hide();
+    tunisia.hide();
+    libia.hide();
+
+    showmor = !showmor;
+  } else {
+    egypt.show();
+    tunisia.show();
+    libia.show();
+
+    showmor = !showmor;
+  }
+});
+////////////////////////////////////////////////////////
+const tunsb = $("<button>Tunisia</button>");
+tunisia.append(tunsb);
+tunsb.css("font-size", "40px");
+
+let showtun = true;
+tunsb.on("click", () => {
+  if (showtun === true) {
+    egypt.hide();
+    moroco.hide();
+    libia.hide();
+
+    showtun = !showtun;
+  } else {
+    egypt.show();
+    moroco.show();
+    libia.show();
+
+    showtun = !showtun;
+  }
+});
+
+/////////////////////////////////////////////////////
+const libb = $("<button>Libya</button>");
+libia.append(libb);
+libb.css("font-size", "40px");
+
+let showlp = true;
+libb.on("click", () => {
+  if (showlp === true) {
+    egypt.hide();
+    moroco.hide();
+    tunisia.hide();
+
+    showlp = !showlp;
+  } else {
+    egypt.show();
+    moroco.show();
+    tunisia.show();
+
+    showlp = !showlp;
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////
 const feed = $("#feed");
 let x = [];
 
@@ -410,3 +549,24 @@ feedb.css("font-size", "40px");
 feedb.on("click", () => {
   feed_button();
 });
+
+const add = $("#add");
+
+/*add.on("click", () => {
+  add();
+});
+
+let addMeal = document.getElementById("contry").value;
+/*
+$(contry).append(`<p>${country}</p>
+<p>${meal}</p>`)
+
+
+
+const add = () => {
+  {
+    if (eux[addMeal] === -1 || amx[addMeal] === -1 || asix[addMeal] === -1) {
+      eux.push(addMeal);
+    }
+  }
+};*/
