@@ -31,7 +31,7 @@ body {
   background-color: burlywood;
  }
 
- #eup:hover{
+ .epho:hover{
   background-color: burlywood;
  }
 
@@ -79,16 +79,12 @@ body {
 }
 
 .eur {
-  /*background-image: url(https://previews.123rf.com/images/hugolacasse/hugolacasse1503/hugolacasse150300008/37231674-travel-europe-landmarks-background-vector-illustration.jpg);*/
-  border-style: double;
-  border-color: black;
+ 
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
-  /*background-color: lightgrey;*/
-  font-size: 60px;
-  border-radius: 10%/50%;
-  width: 1000px;
+   font-size: 60px;
+   width: 1000px;
   font-weight: bold;
   color: wheat;
   background-size: cover;
@@ -108,17 +104,14 @@ body {
 }
 
 .asia {
-  /*background-image: url(https://wallpaperaccess.com/full/6135.jpg);*/
-  border-style: double;
+   border-style: double;
   border-color: black;
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
-  /*background-color: lightgrey;*/
-  font-size: 60px;
+   font-size: 60px;
 border-style: none;
-  /*border-radius: 10%/50%;*/
-  width: 1000px;
+   width: 1000px;
   font-weight: bold;
   color: azure;
   background-size: cover;
@@ -126,8 +119,7 @@ border-style: none;
 .china{color: white;}
 .chinmg {
   border-style: none;
-  /*font-size: 10px;
-width: auto;*/
+   
 }
  
 
@@ -173,14 +165,12 @@ width: auto;*/
 }
 
 .africa {
-  background-image: url(https://c0.wallpaperflare.com/preview/481/695/690/adventure-asia-background-backlit.jpg);
-  border-style: double;
+   border-style: double;
   border-color: black;
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
-  /*background-color: lightgrey;*/
-  font-size: 60px;
+   font-size: 60px;
   border-radius: 10%/50%;
   width: 1000px;
   font-weight: bold;
@@ -188,13 +178,11 @@ width: auto;*/
   background-size: cover;
 }
 .abt {
-  /*border-style: solid;
-  border-color: black;*/
+   
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
-  /*background-color: rgba(222, 184, 135, 0.5);*/
-  font-size: 50px;
+   font-size: 50px;
   border-radius: 10%/50%;
   width: 1000px;
   color: azure;
