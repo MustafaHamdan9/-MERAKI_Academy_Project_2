@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://i.pinimg.com/originals/30/18/93/301893994930e20923a783b2646b01b9.jpg);
+  /*background-image: url(https://previews.123rf.com/images/kesu87/kesu871905/kesu87190500167/123488888-asian-food-background-with-various-ingredients-on-rustic-stone-background-top-view-.jpg);*/
   margin: 0px;
   background-size: cover;
 }
@@ -58,15 +58,19 @@ body {
 }
 
 .eur {
-  /*border-style: solid;
-  border-color: black;*/
+  /*background-image: url(https://previews.123rf.com/images/hugolacasse/hugolacasse1503/hugolacasse150300008/37231674-travel-europe-landmarks-background-vector-illustration.jpg);*/
+  border-style: double;
+  border-color: black;
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
   /*background-color: lightgrey;*/
-  font-size: 40px;
-  /*border-radius: 10%/50%;*/
-  width: 500px;
+  font-size: 60px;
+  border-radius: 10%/50%;
+  width: 1000px;
+  font-weight: bold;
+  color: wheat;
+  background-size: cover;
 }
 .frfood {
   font-size: 50px;
@@ -83,7 +87,7 @@ body {
 }
 
 .asia {
-  background-image: url(https://cdn2.vectorstock.com/i/1000x1000/21/41/asia-travel-background-with-place-for-text-vector-7562141.jpg);
+  /*background-image: url(https://wallpaperaccess.com/full/6135.jpg);*/
   border-style: double;
   border-color: black;
   padding: 10px;
@@ -91,23 +95,20 @@ body {
   margin-left: 120px;
   /*background-color: lightgrey;*/
   font-size: 60px;
-  border-radius: 10%/50%;
+border-style: none;
+  /*border-radius: 10%/50%;*/
   width: 1000px;
   font-weight: bold;
   color: azure;
+  background-size: cover;
 }
-
+.china{color: white;}
 .chinmg {
   border-style: none;
   /*font-size: 10px;
 width: auto;*/
 }
-
-/*.china{display: grid;
-  grid-template-columns: 1fr 1fr;
-width: auto;
-height: auto ;
-}*/
+ 
 
 .mdmg {
   font-size: 50px;
@@ -123,15 +124,18 @@ height: auto ;
 /*/////////////////////////////////////////////*/
 
 .america {
-  /*border-style: solid;
-  border-color: black;*/
+  border-style: double;
+  border-color: black;
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
   /*background-color: lightgrey;*/
-  font-size: 40px;
-  /*border-radius: 10%/50%;*/
-  width: 500px;
+  font-size: 60px;
+  border-radius: 10%/50%;
+  width: 1000px;
+  font-weight: bold;
+  color: black;
+  background-size: cover;
 }
 
 .usmg {
@@ -148,15 +152,19 @@ height: auto ;
 }
 
 .africa {
-  /*border-style: solid;
-  border-color: black;*/
+  background-image: url(https://c0.wallpaperflare.com/preview/481/695/690/adventure-asia-background-backlit.jpg);
+  border-style: double;
+  border-color: black;
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
   /*background-color: lightgrey;*/
-  font-size: 40px;
-  /*border-radius: 10%/50%;*/
-  width: 500px;
+  font-size: 60px;
+  border-radius: 10%/50%;
+  width: 1000px;
+  font-weight: bold;
+  color: black;
+  background-size: cover;
 }
 .abt {
   /*border-style: solid;
@@ -168,6 +176,7 @@ height: auto ;
   font-size: 50px;
   border-radius: 10%/50%;
   width: 1000px;
+  color: azure;
 }
 
 input {

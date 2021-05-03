@@ -35,6 +35,7 @@ hme.on("click", () => {
   america.hide();
   africa.hide();
   abt.hide();
+  body.css("background-image" ," url(https://cdn.wallpapersafari.com/67/52/CY6KqS.jpg)");
 });
 
 const aboute  = $("#about");
@@ -50,7 +51,7 @@ about.on("click", () => {
   america.hide();
   africa.hide();
   abt.show();
-
+  
 }); 
 
 
@@ -81,6 +82,7 @@ eu2.on("click", () => {
   deleu();
   europe.show();
   abt.hide();
+  body.css("background-image"," url(https://thumbs.dreamstime.com/z/food-cheese-figs-mushrooms-meat-vegetables-european-asian-cuisine-healthy-black-stone-background-top-view-197354062.jpg)");
 });
 /////////////////////////////////
 const ib2 = $("<button>Italy</button>");
@@ -208,12 +210,14 @@ const as2 = $("<button>Asia</button>");
 assia.append(as2);
 as2.css({"font-size": "25px","padding": 0,
 "border": "none","font-weight": "bold",
-"background": "none"});
+"background": "none"} );
 
 as2.on("click", () => {
   delas();
   asia.show();
   abt.hide();
+  body.css("background-image"," url(https://previews.123rf.com/images/kesu87/kesu871905/kesu87190500167/123488888-asian-food-background-with-various-ingredients-on-rustic-stone-background-top-view-.jpg)");
+
 });
 /////////
 
