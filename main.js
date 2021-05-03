@@ -13,7 +13,7 @@ const europe = $(".eur");
 const asia = $(".asia");
 const africa = $(".africa");
 const america = $(".america");
-const abt  = $(".abt");
+const abt = $(".abt");
 
 fwdx = [asia, europe, america, africa];
 europe.hide();
@@ -24,10 +24,15 @@ abt.hide();
 const home = $("#hme");
 const hme = $("<button>Home</button>");
 home.append(hme);
-hme.css({"font-size": "25px","padding": 0,
-"border": "none", "font-weight": "bold",
-"background": "none" ,"opacity": 1 ,"font-weight": "bold",});
-
+hme.css({
+  "font-size": "25px",
+  padding: 0,
+  border: "none",
+  "font-weight": "bold",
+  background: "none",
+  opacity: 1,
+  "font-weight": "bold" ,color: "white",
+});
 
 hme.on("click", () => {
   europe.hide();
@@ -35,28 +40,45 @@ hme.on("click", () => {
   america.hide();
   africa.hide();
   abt.hide();
-  body.css("background-image" ," url(https://cdn.wallpapersafari.com/67/52/CY6KqS.jpg)");
+  body.css(
+    "background-image",
+    " url(https://cdn.wallpapersafari.com/2/72/JjX8wB.jpg)"
+  );
 });
 
-const aboute  = $("#about");
+const aboute = $("#about");
 const about = $("<button>About</button>");
 aboute.append(about);
-about.css({"font-size": "25px","padding": 0,
-"border": "none", "font-weight": "bold",
-"background": "none" ,"opacity": 1 ,"font-weight": "bold",});
-
+about.css({
+  "font-size": "25px",
+  padding: 0,
+  border: "none",
+  "font-weight": "bold",color: "white",
+  background: "none",
+  opacity: 1,
+  "font-weight": "bold",
+});
+let showab =true 
 about.on("click", () => {
-  europe.hide();
+  if (showab === true)
+  
+  {europe.hide();
   asia.hide();
   america.hide();
   africa.hide();
   abt.show();
-  
-}); 
+  showab = !showab;}
+  else { abt.hide();
+    showab = !showab;
+  }
 
+ 
+
+});
 
 ///////////////////////////////////////////
 const french = $(".french");
+
 const spain = $(".spain");
 const british = $(".british");
 const italy = $(".italy");
@@ -74,22 +96,33 @@ const deleu = () => {
 const eur = $("#eup");
 const eu2 = $("<button>Europe</button>");
 eur.append(eu2);
-eu2.css({"font-size": "25px","padding": 0,
-"border": "none",
-"background": "none","font-weight": "bold"});
+eu2.css({
+  "font-size": "25px",
+  padding: 0,
+  border: "none",
+  background: "none",
+  "font-weight": "bold",color: "white"
+});
 
 eu2.on("click", () => {
   deleu();
   europe.show();
   abt.hide();
-  body.css("background-image"," url(https://thumbs.dreamstime.com/z/food-cheese-figs-mushrooms-meat-vegetables-european-asian-cuisine-healthy-black-stone-background-top-view-197354062.jpg)");
+  body.css(
+    "background-image",
+    " url(https://image.freepik.com/free-photo/tasty-fresh-appetizing-italian-food-ingredients-dark-background_1220-1741.jpg)"
+  );
 });
 /////////////////////////////////
 const ib2 = $("<button>Italy</button>");
 italy.append(ib2);
-ib2.css({"font-size": "40px","padding": 0,
-"border": "none",
-"background": "none"});
+ib2.css({
+  "font-size": "40px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 
 const itmg = $(".itmg");
 itmg.hide();
@@ -115,9 +148,13 @@ ib2.on("click", () => {
 
 const fb2 = $("<button>France</button>");
 french.append(fb2);
-fb2.css({"font-size": "40px","padding": 0,
-"border": "none",
-"background": "none"});
+fb2.css({
+  "font-size": "40px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 const frimage = $(".frfood");
 frimage.hide();
 
@@ -140,9 +177,13 @@ fb2.on("click", () => {
 
 const bs2 = $("<button>Spain</button>");
 spain.append(bs2);
-bs2.css({"font-size": "40px","padding": 0,
-"border": "none",
-"background": "none"});
+bs2.css({
+  "font-size": "40px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 const spimage = $(".spfood");
 spimage.hide();
 let showSp = true;
@@ -164,9 +205,13 @@ bs2.on("click", () => {
 
 const bb2 = $("<button>British</button>");
 british.append(bb2);
-bb2.css({"font-size": "40px","padding": 0,
-"border": "none",
-"background": "none"});
+bb2.css({
+  "font-size": "40px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 const britmage = $(".britfood");
 britmage.hide();
 
@@ -208,24 +253,35 @@ const delas = () => {
 const assia = $("#asi");
 const as2 = $("<button>Asia</button>");
 assia.append(as2);
-as2.css({"font-size": "25px","padding": 0,
-"border": "none","font-weight": "bold",
-"background": "none"} );
+as2.css({
+  "font-size": "25px",
+  padding: 0,
+  border: "none",
+  "font-weight": "bold",
+  color: "white",
+  background: "none",
+});
 
 as2.on("click", () => {
   delas();
   asia.show();
   abt.hide();
-  body.css("background-image"," url(https://previews.123rf.com/images/kesu87/kesu871905/kesu87190500167/123488888-asian-food-background-with-various-ingredients-on-rustic-stone-background-top-view-.jpg)");
-
+  body.css(
+    "background-image",
+    " url(https://previews.123rf.com/images/kesu87/kesu871905/kesu87190500167/123488888-asian-food-background-with-various-ingredients-on-rustic-stone-background-top-view-.jpg)"
+  );
 });
 /////////
 
 const chb2 = $("<button>China</button>");
 china.append(chb2);
-chb2.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+chb2.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 const chinmg = $(".chinmg");
 chinmg.hide();
 
@@ -248,9 +304,13 @@ chb2.on("click", () => {
 
 const mdb2 = $("<button>Midest</button>");
 Midest.append(mdb2);
-mdb2.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+mdb2.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 
 const mdemg = $(".mdmg");
 mdemg.hide();
@@ -275,9 +335,13 @@ mdb2.on("click", () => {
 
 const kb2 = $("<button>Korea</button>");
 Korea.append(kb2);
-kb2.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+kb2.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 const kormg = $(".kormg");
 kormg.hide();
 
@@ -302,9 +366,13 @@ kb2.on("click", () => {
 
 const jb2 = $("<button>Japan</button>");
 japan.append(jb2);
-jb2.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+jb2.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  color: "white",
+  background: "none",
+});
 const jpmg = $(".jpmg");
 
 jpmg.hide();
@@ -340,7 +408,6 @@ const delam = () => {
   for (i = 0; i <= fwdx.length - 1; i++) {
     if (fwdx[i] !== america) {
       fwdx[i].css("display", "none");
-      
     }
   }
 };
@@ -348,9 +415,13 @@ const delam = () => {
 const amerca = $("#amc");
 const am2 = $("<button>America</button>");
 amerca.append(am2);
-am2.css({"font-size": "25px","padding": 0,
-"border": "none",
-"background": "none","font-weight": "bold"});
+am2.css({
+  "font-size": "25px",
+  padding: 0,
+  border: "none",
+  background: "none",
+  "font-weight": "bold",color: "white"
+});
 const usmg = $(".usmg");
 usmg.hide();
 
@@ -358,13 +429,20 @@ am2.on("click", () => {
   delam();
   america.show();
   abt.hide();
+  body.css(
+    "background-image",
+    " url(https://thumbs.dreamstime.com/b/tasty-hot-dog-french-fries-drink-wooden-background-top-view-space-text-traditional-american-food-143463159.jpg)"
+  );
 });
 
 const usab = $("<button>USA</button>");
 usa.append(usab);
-usab.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+usab.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none","color":"azure"
+});
 
 let showus = true;
 usab.on("click", () => {
@@ -387,9 +465,12 @@ usab.on("click", () => {
 
 const canb = $("<button>Canada</button>");
 canada.append(canb);
-canb.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+canb.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none","color":"azure"
+});
 const canmg = $(".canmg");
 canmg.hide();
 
@@ -414,9 +495,12 @@ canb.on("click", () => {
 
 const brab = $("<button>Brazil</button>");
 brazil.append(brab);
-brab.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+brab.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none","color":"azure"
+});
 const brmg = $(".brmg");
 brmg.hide();
 
@@ -439,9 +523,12 @@ brab.on("click", () => {
 });
 const argb = $("<button>Argentina</button>");
 argin.append(argb);
-argb.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+argb.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none","color":"azure"
+});
 const argm = $(".argmg");
 argm.hide();
 
@@ -475,9 +562,13 @@ const delaf = () => {
 const Africa = $("#afr");
 const af2 = $("<button>Africa</button>");
 Africa.append(af2);
-af2.css({"font-size": "25px","padding": 0,
-"border": "none",
-"background": "none","font-weight": "bold"});
+af2.css({
+  "font-size": "25px",
+  padding: 0,
+  border: "none",
+  background: "none",
+  "font-weight": "bold",color: "white"
+});
 
 af2.on("click", () => {
   delaf();
@@ -487,13 +578,15 @@ af2.on("click", () => {
 
 ///////////////////////////////////////////////////////////////////////
 
-
 const egypt = $(".egypt");
 const egyb = $("<button>Egypt</button>");
 egypt.append(egyb);
-egyb.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+egyb.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none",
+});
 
 let showegp = true;
 egyb.on("click", () => {
@@ -516,9 +609,12 @@ egyb.on("click", () => {
 const moroco = $(".moroco");
 const morob = $("<button>Moroco</button>");
 moroco.append(morob);
-morob.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+morob.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none",
+});
 
 let showmor = true;
 morob.on("click", () => {
@@ -540,9 +636,12 @@ morob.on("click", () => {
 const tunisia = $(".tunisia");
 const tunsb = $("<button>Tunisia</button>");
 tunisia.append(tunsb);
-tunsb.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+tunsb.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none",
+});
 
 let showtun = true;
 tunsb.on("click", () => {
@@ -565,9 +664,12 @@ tunsb.on("click", () => {
 const libia = $(".Libia");
 const libb = $("<button>Libya</button>");
 libia.append(libb);
-libb.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+libb.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none",
+});
 
 let showlp = true;
 libb.on("click", () => {
@@ -588,10 +690,6 @@ libb.on("click", () => {
 
 /////////////////////////
 
-
- 
-
-
 const feed = $("#feed");
 let x = [];
 
@@ -606,9 +704,12 @@ const feed_button = () => {
 };
 
 const feedb = $("#fedbk");
-feedb.css({"font-size": "30px","padding": 0,
-"border": "none",
-"background": "none"});
+feedb.css({
+  "font-size": "30px",
+  padding: 0,
+  border: "none",
+  background: "none",
+});
 feedb.on("click", () => {
   feed_button();
 });

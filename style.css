@@ -25,8 +25,28 @@ body {
 
 #hme:hover {
   background-color: burlywood;
-  color: red;
-}
+ }
+
+ #asi:hover{
+  background-color: burlywood;
+ }
+
+ #eup:hover{
+  background-color: burlywood;
+ }
+
+ #amc:hover{
+  background-color: burlywood;
+ }
+
+ #afr:hover{
+  background-color: burlywood;
+ }
+
+ #about:hover{
+  background-color: burlywood;
+ }
+
 
 #links {
   width: 40%;
@@ -45,6 +65,7 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: 350px;
+  color: azure;
 }
 
 .fwd {
@@ -134,7 +155,7 @@ width: auto;*/
   border-radius: 10%/50%;
   width: 1000px;
   font-weight: bold;
-  color: black;
+  color: azure;
   background-size: cover;
 }
 
@@ -172,7 +193,7 @@ width: auto;*/
   padding: 10px;
   margin-right: auto;
   margin-left: 120px;
-  background-color: rgba(222, 184, 135, 0.5);
+  /*background-color: rgba(222, 184, 135, 0.5);*/
   font-size: 50px;
   border-radius: 10%/50%;
   width: 1000px;
@@ -180,18 +201,16 @@ width: auto;*/
 }
 
 input {
-  font-size: 50px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .feedback {
   grid-template-columns: 1fr, 1fr;
   position: bottom;
-  /*border-style: solid;
-  border-radius: 10%/50%;
-  border-color: white;*/
+   
   display: flex;
-  /* background-color: white;*/
-  margin-right: 50px;
+   margin-right: 50px;
   margin-left: 50px;
   font-size: 20px;
   text-align: center;
