@@ -576,7 +576,7 @@ af2.on("click", () => {
   abt.hide();
   body.css(
     "background-image",
-    " url(https://thumbs.dreamstime.com/b/west-african-food-assortment-west-african-food-concept-traditional-wset-african-dishes-assortment-peanut-soup-jollof-rice-grilled-136692290.jpg)"
+    " url(https://st2.depositphotos.com/3300441/11588/i/950/depositphotos_115883674-stock-photo-chinese-food-blank-background.jpg)"
   );
   
 });
@@ -590,7 +590,7 @@ egyb.css({
   "font-size": "30px",
   padding: 0,
   border: "none",
-  background: "none",
+  background: "none","color":"azure"
 });
 
 let showegp = true;
@@ -618,7 +618,7 @@ morob.css({
   "font-size": "30px",
   padding: 0,
   border: "none",
-  background: "none",
+  background: "none","color":"azure"
 });
 
 let showmor = true;
@@ -645,7 +645,7 @@ tunsb.css({
   "font-size": "30px",
   padding: 0,
   border: "none",
-  background: "none",
+  background: "none","color":"azure"
 });
 
 let showtun = true;
@@ -673,7 +673,7 @@ libb.css({
   "font-size": "30px",
   padding: 0,
   border: "none",
-  background: "none",
+  background: "none","color":"azure"
 });
 
 let showlp = true;
