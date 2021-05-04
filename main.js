@@ -592,12 +592,8 @@ egyb.css({
   border: "none",
   background: "none","color":"azure"
 });
-const argm = $(".argmg");
-argm.hide();
-
-
-
-
+const egimg = $(".egmg");
+egimg.hide();
 
 
 let showegp = true;
@@ -606,13 +602,13 @@ egyb.on("click", () => {
     tunisia.hide();
     moroco.hide();
     libia.hide();
-
+    egimg.show();
     showegp = !showegp;
   } else {
     tunisia.show();
     moroco.show();
     libia.show();
-
+    egimg.hide();
     showegp = !showegp;
   }
 });
@@ -628,19 +624,25 @@ morob.css({
   background: "none","color":"azure"
 });
 
+const morimg = $(".mormg");
+morimg.hide();
+
+
+
+
 let showmor = true;
 morob.on("click", () => {
   if (showmor === true) {
     egypt.hide();
     tunisia.hide();
     libia.hide();
-
+    morimg.show();
     showmor = !showmor;
   } else {
     egypt.show();
     tunisia.show();
     libia.show();
-
+    morimg.hide();
     showmor = !showmor;
   }
 });
@@ -655,18 +657,26 @@ tunsb.css({
   background: "none","color":"azure"
 });
 
+
+const tunimg = $(".tunmg");
+tunimg.hide();
+
+
+
 let showtun = true;
 tunsb.on("click", () => {
   if (showtun === true) {
     egypt.hide();
     moroco.hide();
     libia.hide();
+    tunimg.show();
 
     showtun = !showtun;
   } else {
     egypt.show();
     moroco.show();
     libia.show();
+    tunimg.hide();
 
     showtun = !showtun;
   }
@@ -683,18 +693,27 @@ libb.css({
   background: "none","color":"azure"
 });
 
+const libimg = $(".lipmg");
+libimg.hide();
+
+
+
+
+
 let showlp = true;
 libb.on("click", () => {
   if (showlp === true) {
     egypt.hide();
     moroco.hide();
     tunisia.hide();
+    libimg.show();
 
     showlp = !showlp;
   } else {
     egypt.show();
     moroco.show();
     tunisia.show();
+    libimg.hide();
 
     showlp = !showlp;
   }
