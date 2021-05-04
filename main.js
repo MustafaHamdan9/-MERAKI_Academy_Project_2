@@ -592,6 +592,13 @@ egyb.css({
   border: "none",
   background: "none","color":"azure"
 });
+const argm = $(".argmg");
+argm.hide();
+
+
+
+
+
 
 let showegp = true;
 egyb.on("click", () => {
